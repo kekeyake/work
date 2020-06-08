@@ -1,0 +1,187 @@
+@charset "utf-8";
+#booking {padding-bottom: 56px;}
+#seat_selection {padding:117px 0 112px;}
+#payment_box {padding-top: 61px;}
+#admission_ticket_add {padding-top: 61px;}
+#admission_ticket_add > .tit {background-color: #f7f7f7;border-bottom: none;}
+#admission_ticket {padding: 61px 0 124px;}
+#frequently_used_cards {padding: 61px 0 205px;}
+#ok_cashback {padding: 61px 0 124px;}
+#partner_point {padding: 61px 0 124px;}
+.booking_main {padding:0;}
+.booking_header {padding: 16px 24px;display: flex;align-items: center;position: fixed;left: 0;top:0;width:100%;z-index: 10;background-color: #fff;}
+.booking_header .btn_left {margin-right: 8px;}
+.booking_header .btn_right {margin-left: auto;}
+.booking_header .btn_help {margin-left: 8px;}
+.booking_header .tit {font-size: 20px;color:#242424;}
+.seat_info_top {display: flex;justify-content: space-between;align-items: center;height:56px;padding:0 24px;position: fixed;left:0;top:61px;width:100%;z-index: 10;background-color: #fff;}
+.seat_info_top .txt {font-size: 14px;color:#666;font-weight: bold;word-break: keep-all;width:60%;}
+.seat_info_top a.btn_select_info {padding-right:24px;background: url(../img/common/ic-dropdown-down.svg) no-repeat 100% 50%;color:#242424;}
+.seat_info {position: relative;}
+.seat_info .seat_sys img {width: 100%;}
+.seat_payment {display: flex;justify-content: space-between;align-items: center;padding:24px 24px 28px;background-color: #242424;position: fixed;left:0;bottom:0;width:100%;}
+.seat_payment .tit {font-size: 14px;color:#fff;font-weight: bold;margin-bottom: 2px;}
+.seat_payment .t1 {font-size: 13px;color:#999;}
+.seat_payment .movie_info {width:45%;}
+.seat_payment .btn_payment {padding:10px 22px 14px 54px;border-radius: 32px;box-shadow: 4px 8px 15px 0 rgba(0, 0, 0, 0.5);background: #fff url(../img/booking/ic-payment.svg) no-repeat 24px 50%;}
+.seat_payment .btn_payment span {font-size: 14px;color:#242424;text-align: center;display: inline-block;min-width: 70px;}
+.seat_payment .btn_payment span b {display: block;}
+.seat_payment .btn_payment.disabled {opacity: .5;}
+.payment_box {padding:16px 24px 24px;}
+.payment_box .refund_policy .tit {padding-right: 8px;;}
+.payment_box .refund_policy .tit a {font-size: 14px;color:#666;background:url(../img/common/ic-dropdown-down.svg) no-repeat 100% 50%;display: block;width:100%;}
+.payment_box .refund_policy .tit a.on {background:url(../img/common/ic-dropdown-up.svg) no-repeat 100% 50%;}
+.payment_box .refund_policy div {display:none;border: 1px solid #e2e2e2;background-color: #f7f7f7;padding:16px;white-space: pre-line;line-height: 1.85;color:#999;font-size: 13px;margin-top: 16px;;}
+.payment_box .payment_movie {position: relative;overflow: hidden;display: flex;align-items: center;margin-bottom: 16px;}
+.payment_box .payment_movie .movie_img {width:30%;padding-top:43%;background: #e2e2e2 url(../img/common/img-default.svg) no-repeat 50% 50% / 25px 32px;border-radius: 10px;position: relative;overflow: hidden;}
+.payment_box .payment_movie .movie_img img {width: 100%;position: absolute;left:0;top:0;}
+.payment_box .payment_movie .movie_info {width:70%;padding:0 16px;}
+.payment_box .payment_movie .movie_info .tit {font-size: 14px;font-weight: bold;color:#242424;margin-bottom: 2px;width:100%;word-break: break-all;}
+.payment_box .payment_movie .movie_info .stit {font-size: 11px;color:#999;margin-bottom: 7px;width:100%;word-break: break-all;}
+.payment_box .payment_movie .movie_info .date {font-size: 13px;color:#242424;margin-bottom: 4px;}
+.payment_box .payment_movie .movie_info .date span:first-child {margin-right: 4%;}
+.payment_box .payment_movie .movie_info .date em {color:#999;font-style: normal;}
+.payment_box .payment_movie .movie_info .cinema {font-size: 13px;color:#999;word-break: break-all;margin-bottom: 4px;}
+.payment_box .payment_movie .movie_info .cinema span:nth-child(2) {border-right: 1px solid #e2e2e2;border-left: 1px solid #e2e2e2;padding:0 8px;margin:0 8px;}
+.payment_box .payment_movie .movie_info .seat_num {font-size: 13px;color:#242424;}
+.payment_box .payment_movie .movie_info .seat_num span {color:#999;margin-right: 5px;border-right: 1px solid #e2e2e2;padding-right: 5px;}
+.payment_box .point_info li.disabled {opacity: 0.4;}
+.payment_box .point_info .info_top {display: flex;align-items: center;justify-content: space-between;padding:16px 8px;border-bottom: 1px solid #e2e2e2;}
+.payment_box .point_info .info_top {display: flex;align-items: center;justify-content: space-between;padding:16px 8px;border-bottom: 1px solid #e2e2e2;}
+.payment_box .point_info .info_top span:last-child {display: flex;align-items: center;}
+.payment_box .point_info .info_top span:last-child a {width:24px;height:24px;display:inline-block;text-align: center;margin-left: 12px;background: url(../img/common/ic-dropdown-down.svg) no-repeat 50% 50%;}
+.payment_box .point_info .info_top span:last-child a.on {background: url(../img/common/ic-dropdown-up.svg) no-repeat 50% 50%;}
+.payment_box .point_info .info_top span:last-child .btn_ok_cashback {background:url(../img/common/ic-arrow-right.svg) no-repeat 50% 50%;}
+.payment_box .point_info .info_list_box {padding:16px;background-color: #f7f7f7;text-align: center;margin-bottom: 8px;display: none;}
+.payment_box .point_info .info_list_box li {background-color: #fff;border-radius: 4px;padding:16px 12px 16px 16px;text-align: left;margin-bottom: 8px;}
+.payment_box .point_info .info_list_box li p {height:24px;background: url(../img/common/ic-arrow-right.svg) no-repeat 100% 50%;line-height: 24px;font-size: 13px;color:#242424;}
+.payment_box .point_info .info_list_box button {display: inline-block;margin-top: 6px;color:#999;font-size: 13px;padding:0 0 0 28px;background: url(../img/common/btn-delete-list.svg) no-repeat 0 50%;height:24px;line-height: 24px;}
+.payment_box .payment_wrap {margin-bottom:24px;padding:18px 8px 26px;border-bottom: 1px solid #e2e2e2;}
+.payment_box .payment_wrap .tit {font-size: 13px;color:#242424;margin-bottom: 24px;}
+.payment_box .payment_wrap .payment_btn {display: table;border-radius: 2px;overflow: hidden;font-size: 0;width:100%;table-layout: fixed;border-collapse: collapse;}
+.payment_box .payment_wrap .payment_btn a {display: table-cell;vertical-align: middle;width:33.333%;font-size: 13px;text-align: center;font-weight: normal;color:#999;border: 1px solid #e2e2e2;height:48px;box-sizing: border-box;}
+.payment_box .payment_wrap .payment_btn a:hover,
+.payment_box .payment_wrap .payment_btn a:active,
+.payment_box .payment_wrap .payment_btn a:focus {opacity: 0.85;}
+.payment_box .payment_wrap .payment_btn a.on {background-color: #f16a1a;color:#fff;border: 1px solid #f16a1a;}
+.payment_box .payment_wrap .payment_btn a.on.disabled {background-color: #e2e2e2;border: 1px solid #e2e2e2;}
+.booking_main .input_register {}
+.booking_main .input_register .inner {padding:9px 24px 24px;}
+.booking_main .input_register::after {display: block;content: '';width:100%;height:8px;background-color: #f7f7f7;}
+.booking_main .input_register input {border: none;border-bottom: 1px solid #e2e2e2;padding:18px 8px 19px;color:#242424;font-size: 13px;display: block;width: 100%;border-radius: 0;}
+.booking_main .input_register input::placeholder {opacity: 0.5;}
+.booking_main .input_register input:focus {border-bottom: 1px solid #333;}
+.booking_main .input_register .btn_input_register {display: block;width: 100%;margin-top:24px;border: 1px solid #e2e2e2;border-radius: 4px; background-color: #fff;text-align: center;color:#242424;font-size: 13px;padding:18px 0 19px;font-weight: normal;}
+.booking_main .input_register .btn_input_register:hover,
+.booking_main .input_register .btn_input_register:active,
+.booking_main .input_register .btn_input_register:focus {opacity: 0.6;}
+.admission_ticket .ticket_list {padding:16px 24px 24px;}
+.admission_ticket .ticket_list li {display: flex;justify-content: space-between;align-items: center;padding: 12px 8px;border-bottom: 1px solid #e2e2e2;font-size: 13px;;}
+.admission_ticket .ticket_list li .info {width:60%;}
+.admission_ticket .ticket_list li .use {width:40%;display: flex;justify-content: flex-end;}
+.admission_ticket .ticket_list li .tit {color:#242424;}
+.admission_ticket .ticket_list li .date {color:#999;}
+.admission_ticket .ticket_list li .use_info {color:#999;}
+.booking_main .cus_select {display:none;padding:5px 28px 5px 16px;font-size: 13px;color:#242424; -webkit-appearance: none;appearance: none;background: url(../img/common/ic-dropdown-down.svg) no-repeat 100% 50%;border: none;}
+.booking_main .cus_check {}
+.booking_main .cus_check label {cursor: pointer;font-size: 13px;color:#242424;margin:0;padding:6px 16px 7px;align-items: center;border: 1px solid #e2e2e2;border-radius: 100px;display: inline-block;}
+.booking_main .cus_check input[type=checkbox] {display: none;}
+.booking_main .cus_check input[type=checkbox]:checked + label {background: #f16a1a url(../img/common/btn-checkbox-sel.svg) no-repeat 4px 50%;color:#fff;border: 1px solid #f16a1a;border-radius: 100px;padding:6px 16px 7px 32px;}
+.booking_main .cus_check.check1 {position: absolute;right:0;top:12px;}
+.booking_main .ok_cashback_list {padding:24px;position: relative;}
+.booking_main .ok_cashback_list .tit {font-size: 14px;color:#666;margin-bottom: 16px;font-weight: bold;}
+.booking_main .ok_cashback_list .btn_refresh {position: absolute;top:18px;right:24px;}
+.booking_main .ok_cashback_list .points {font-size: 20px;font-weight: bold;color:#242424;margin-bottom: 16px;}
+.booking_main .ok_cashback_list .input_box {position: relative;}
+.booking_main .ok_cashback_list .input_box > input {width:100%;padding:18px 8px 19px;border: none;font-size: 13px;color:#242424;box-sizing: border-box;height:56px;border-bottom: 1px solid #e2e2e2;border-radius: 0;}
+.booking_main .ok_cashback_list .input_box > input::placeholder {color:#999;opacity: 0.5;}
+.booking_main .ok_cashback_list .input_box > input:focus {border-bottom: 1px solid #333;}
+.booking_main .ok_cashback_list .txt_box {font-size: 13px;color:#999;margin-top: 16px;line-height: 22px;}
+.booking_main .ok_cashback_list .txt_box .txt_center {text-align: center;}
+.booking_main .ok_cashback_list .txt_box li {padding-left:10px;position: relative;}
+.booking_main .ok_cashback_list .txt_box li:after {display: block;content: '';position: absolute;left:2px;top:10px;width:2px;height:2px;border-radius: 50px;background-color: #73eaff;}
+.frequently_used_cards {padding:16px 24px;}
+.frequently_used_cards .card_img {background: linear-gradient(110deg, rgba(51,51,51,1) 0%,rgba(51,51,51,1) 50%,rgba(36,36,36,1) 50%,rgba(36,36,36,1) 100%);border-radius: 10px;padding:18px 16px 18px 24px;display: flex;justify-content: space-between;align-items: top;margin-bottom: 16px;}
+.frequently_used_cards .card_img div {text-align: left;color:#fff;}
+.frequently_used_cards .card_name {font-size: 16px;font-weight: bold;margin-bottom: 46px;;}
+.frequently_used_cards .card_num {font-size: 16px;}
+.frequently_used_cards .card_validity {font-size: 13px;}
+.frequently_used_cards a {display:block;width:24px;height:24px;}
+.frequently_used_cards a img {width:100%;}
+.frequently_used_cards .card_info_list .cus_select {display: block;width:100%;padding:18px 0 19px 8px;background-position: 97% 50%;border-bottom: 1px solid #e2e2e2;border-radius: 0;}
+.frequently_used_cards .card_info_list > input {display: block;width:100%;color:#242424;font-size: 13px;padding:18px 0 19px 8px;border:none; border-bottom: 1px solid #e2e2e2;border-radius: 0;}
+.frequently_used_cards .card_info_list > input:focus {border-bottom: 1px solid #333;}
+.frequently_used_cards .card_info_list > input::placeholder {color:#999;opacity: 0.5;}
+.frequently_used_cards .card_info_list .cus_checkbox {margin-top: 16px;}
+.frequently_used_cards .card_info_list .cus_checkbox.right_align {border-bottom: 1px solid #e2e2e2;height:40px}
+.final_payment_box {position: fixed;left:0;bottom:0;width:100%;background:#fff;box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);}
+.final_payment_box .inner {padding:24px;}
+.final_payment_box .inner ul {padding-bottom: 16px;border-bottom: 1px solid #e2e2e2;margin-bottom:16px;}
+.final_payment_box .inner li {display: flex;justify-content: space-between;align-items: center;padding:0 8px;line-height: 1.85;color:#999;font-size: 13px;}
+.final_payment_box .inner li strong {font-weight: normal;}
+.final_payment_box .inner .total {display: flex;justify-content: space-between;align-items: center;font-size: 14px;color:#242424;font-weight: bold;}
+.final_payment_box .btn_payment {padding:18px 0 19px;font-size: 13px;color:#fff;background-color: #f16a1a;font-weight: normal;display: block;width:100%;text-align: center;}
+.final_payment_box .btn_payment:hover,
+.final_payment_box .btn_payment:active,
+.final_payment_box .btn_payment:focus {opacity: 0.85;color:#fff;}
+.final_payment_box .btn_payment.disabled {background-color: #e2e2e2;}
+.admission_ticket_add_box {padding:16px 24px;}
+.admission_ticket_add_box::before {display: block;content: '';width: 200%;height: 160px;position: absolute;left: -50%;top: 0;z-index: -1;background-color: #f7f7f7;}
+.admission_ticket_add_box > .tit {font-size: 20px;color:#242424;font-weight: bold;padding:0;}
+.admission_ticket_add_box .voucher_box {text-align: center;margin-top: 48px;}
+.admission_ticket_add_box ol li {text-align: center;margin-bottom: 24px;font-size: 13px;}
+.admission_ticket_add_box ol li span {padding:6px 8px 7px;border: 1px solid #e2e2e2;border-radius: 33px;color:#666;display: inline-block;width:33px;height:33px;box-sizing: border-box;line-height: 20px;text-align: center;}
+.admission_ticket_add_box ol li p {margin-top: 8px;color:#666;}
+.admission_ticket_add_box ol li p b {color:#333;}
+.admission_ticket_add_box .txt_box {border: 1px solid #e2e2e2;background-color: #f7f7f7;padding:16px;line-height: 1.85;margin-top: 40px;}
+.admission_ticket_add_box .txt_box p {text-indent: -9px;padding-left: 10px;font-size: 13px;color:#999;}
+
+.layer_full.seat_selection_ly {padding-top: 61px;}
+.seat_selection_ly .seat_input {position: absolute;left:0;top:61px;width:100%;background-color: #fff;padding:0 24px;}
+.seat_selection_ly .seat_input li {display: flex;justify-content: space-between;align-items: center;height:56px;border-bottom: 1px solid #e2e2e2;}
+.seat_selection_ly .seat_input li > span {font-size: 13px;color:#242424;}
+.seat_selection_ly .seat_input li > div {display: flex;align-items: center;}
+.seat_selection_ly .seat_input li > div span {font-size: 13px;color:#242424;margin:0 8px;width:24px;text-align: center;}
+.seat_selection_ly .seat_input .btn_select {margin:24px 0;width:100%;display: block;color:#fff;font-size: 13px;padding:18px 0 19px;text-align: center;border-radius: 4px;background-color: #f16a1a;}
+.seat_selection_ly .seat_input .btn_select:hover,
+.seat_selection_ly .seat_input .btn_select:active,
+.seat_selection_ly .seat_input .btn_select:focus {opacity: 0.85;color:#fff;}
+.seat_selection_ly .seat_input .btn_select.disabled {background-color: #e2e2e2;;}
+
+.partner_point {padding:16px 24px;}
+.partner_point .partner_point_list .cus_select {display: block;width:100%;padding:18px 0 19px 8px;background-position: 97% 50%;border-bottom: 1px solid #e2e2e2;border-radius: 0;}
+.partner_point .partner_point_list .input_box {display: flex;align-items: center;padding:0 8px 0;border-bottom: 1px solid #e2e2e2;font-size: 13px;color:#999;}
+.partner_point .partner_point_list .input_box > strong {width:25%;font-weight: normal;padding:18px 0 19px;}
+.partner_point .partner_point_list .input_box > div {width:75%;box-sizing: border-box;display: flex;align-items: center;padding:0 10px;}
+.partner_point .partner_point_list .input_box input[type="text"],
+.partner_point .partner_point_list .input_box input[type="number"],
+.partner_point .partner_point_list .input_box input[type="password"] {border: none;box-sizing: border-box;width:100%;padding:18px 0 19px;color:#242424;}
+.partner_point .partner_point_list .input_box input::placeholder {opacity: 0.5;}
+.partner_point .partner_point_list .btn_save_point {font-size: 13px;color: #242424;border-radius: 4px;padding: 18px 0 19px;text-align: center;display: block;margin-top: 24px;font-weight: normal;border: 1px solid #e2e2e2;}
+.partner_point .partner_point_list .btn_save_point:hover,
+.partner_point .partner_point_list .btn_save_point:active,
+.partner_point .partner_point_list .btn_save_point:focus {opacity: 0.6;}
+
+.layer_full.partner_point_ok {padding-top: 61px;}
+.layer_full.partner_point_ok .tit {border-bottom: none;}
+.partner_point_ok_box {}
+.partner_point_ok_box > .tit {font-size: 20px;color:#242424;font-weight: bold;padding:0 24px;margin-bottom: 8px;}
+.partner_point_ok_box .info_box .inner {padding:24px}
+.partner_point_ok_box .info_box::after {display: block;content: '';width:100%;height:8px;background-color: #f7f7f7;}
+.partner_point_ok_box .info_box:last-child::after {display: none;}
+.partner_point_ok_box .info_box li {line-height: 1.85;font-size: 13px;display: flex;}
+.partner_point_ok_box .info_box .tit {font-size: 14px;color:#666;font-weight: bold;margin-bottom: 16px;}
+.partner_point_ok_box .info_box li > strong {color:#999;width:30%;font-weight: normal;}
+.partner_point_ok_box .info_box li > span {color:#333;width:70%;letter-spacing: -0.02em;}
+.partner_point_ok_box .info_box li > span.price {font-weight: bold;}
+.partner_point_ok_box .info_box .txt {font-size: 13px;color:#999;margin-bottom: 20px;letter-spacing: -0.02em;word-break: keep-all;}
+
+.layer_alert .booking_info {padding:32px 24px 24px;border-bottom: 1px solid #e2e2e2;}
+.layer_alert .booking_info .years_ico {width:56px;height:56px;border-radius: 100%;background-color: #000;text-align: center;padding:13px 0 14px;color:#fff;font-size: 20px;font-weight: bold;margin: 0 auto;}
+.layer_alert .booking_info .years_tit {text-align: center;font-size: 20px;color:#242424;font-weight: bold;margin:8px 0;}
+.layer_alert .booking_info .years_txt {text-align: center;font-size: 13px;color:#242424;font-weight: normal;}
+.layer_alert .booking_info .t_box {border: 1px solid #e2e2e2;background-color: #f7f7f7;padding:16px;font-size: 13px;line-height: 1.85;color:#666;margin-top: 24px;max-height:226px;overflow-y: scroll;}
+.layer_alert .booking_info .t_box p {padding-left: 10px;position: relative;}
+.layer_alert .booking_info .t_box p::after {display: block;content: '-';position: absolute;left:0;top:2px;}
+
+

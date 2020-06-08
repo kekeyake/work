@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2"></div>
+	<div class="wrap">
+		<header>
+			<div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#a" class="btn_find_nav">영화관찾기</a></li>
+                        <li><a href="#a"class="btn_search_nav">영화검색</a></li>
+                        <li class="on"><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                </nav>
+            </div>
+		</header>
+		<article class="detail_sub">
+            <section class="detail_cont">
+                <div class="inner">
+                    <div class="mypage_wrap">
+                        <div class="side_nav">
+                            <h2>My Page</h2>
+                            <ul>
+                                <li><a href="#a">예매/구매내역</a></li>
+                                <li><a href="#a">영화 관람권</a></li>
+                                <li class="on"><a href="#a">멤버쉽포인트</a></li>
+                                <li><a href="#a">내가 본 영화 <span>1</span></a></li>
+                                <li><a href="#a">내가 쓴 감상평</a></li>
+                                <li><a href="#a">1:1 문의</a></li>
+                                <li><a href="#a">회원정보 수정</a></li>
+                                <li><a href="#a">선택정보 수정</a></li>
+                            </ul>
+                        </div>
+                        <div class="mypage_cont">
+                            <h2>멤버쉽포인트</h2>
+                            <p class="stit">사용 가능 포인트는 현재 기준 온,오프라인에서 실제 사용 가능한 포인트입니다.</p>
+                            <ul class="tab_list">
+                                <li class="on"><a href="#a">OK캐시백</a></li>
+                                <li><a href="#a">멤버쉽포인트</a></li>
+                                <li><a href="#a">기프트콘</a></li>
+                                <li><a href="#a">카카오관람권</a></li>
+                            </ul>
+                            <div class="use_point_wrap">
+                                <div class="logo">P</div>
+                                <div class="point_t">
+                                    <span>사용가능 포인트:</span>
+                                    <strong>20,900 P</strong>
+                                </div>
+                                <div class="point_info">
+                                    <span>적립예정</span>
+                                    <b>0P</b>
+                                    <span>소멸예정</span>
+                                    <button><img src="assets/img/btn-tip.svg" alt="tip"></button>
+                                    <b>0P</b>
+                                </div>
+                            </div>
+                            <div class="use_history_list">
+                                <h2>이용내역 조회</h2>
+                                <div class="use_search_list">
+                                    <span>조회기간 :</span>
+                                    <div class="btn_list">
+                                        <button class="on">1주일</button>
+                                        <button>1개월</button>
+                                        <button>3개월</button>
+                                        <button>6개월</button>
+                                    </div>
+                                    <div class="date_input">
+                                        <div>
+                                            <input type="text" value="2020.01.22">
+                                            <button><img src="assets/img/btn-calendar.svg" alt="달력"></button>
+                                        </div>
+                                        <span>~</span>
+                                        <div>
+                                            <input type="text" value="2020.01.22">
+                                            <button><img src="assets/img/btn-calendar.svg" alt="달력"></button>
+                                        </div>
+                                        <button>조회</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tbl_list" style="margin-top: 0;">
+                                <div class="list_wrap use">
+                                    <dl>
+                                        <dt>일자</dt>
+                                        <dd>2020.03.22</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>구분</dt>
+                                        <dd>적립/ 티켓구입(10%적립)</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>내용</dt>
+                                        <dd>몽마르트 파파</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>포인트</dt>
+                                        <dd><b>+3,000</b></dd>
+                                    </dl>
+                                </div>
+                                <div class="list_wrap use">
+                                    <dl>
+                                        <dt>일자</dt>
+                                        <dd>2020.03.22</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>구분</dt>
+                                        <dd>적립/ 티켓구입(10%적립)</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>내용</dt>
+                                        <dd>몽마르트 파파</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>포인트</dt>
+                                        <dd><b>+3,000</b></dd>
+                                    </dl>
+                                </div>
+                                <div class="list_wrap use">
+                                    <dl>
+                                        <dt>일자</dt>
+                                        <dd>2020.03.22</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>구분</dt>
+                                        <dd>적립/ 티켓구입(10%적립)</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>내용</dt>
+                                        <dd>몽마르트 파파</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>포인트</dt>
+                                        <dd><b>+3,000</b></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="desc_list">
+                                <ul>
+                                    <li>하단 내역은 상영일 및 구매일 기준이며, 해당일 익일(+1) 에 사용 가능 포인트로 전환됩니다.</li>
+                                    <li>적립 예정 포인트는 사용 가능포인트에 포함되지 않으며, 환불 또는 거래 취소가 될 경우 내역에서 삭제됩니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</article>
+		<footer>
+			<ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+    </div>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2"></div>
+	<div class="wrap">
+		<header>
+			<div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#a" class="btn_find_nav">영화관찾기</a></li>
+                        <li><a href="#a"class="btn_search_nav">영화검색</a></li>
+                        <li class="on"><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                </nav>
+            </div>
+		</header>
+		<article class="detail_sub">
+            <section class="detail_cont">
+                <div class="inner">
+                    <div class="mypage_wrap">
+                        <div class="side_nav">
+                            <h2>My Page</h2>
+                            <ul>
+                                <li><a href="#a">예매/구매내역</a></li>
+                                <li><a href="#a">영화 관람권</a></li>
+                                <li><a href="#a">멤버쉽포인트</a></li>
+                                <li><a href="#a">내가 본 영화 <span>1</span></a></li>
+                                <li><a href="#a">내가 쓴 감상평</a></li>
+                                <li><a href="#a">1:1 문의</a></li>
+                                <li class="on"><a href="#a">회원정보 수정</a></li>
+                                <li><a href="#a">선택정보 수정</a></li>
+                            </ul>
+                        </div>
+                        <div class="mypage_cont">
+                            <h2>회원정보 수정</h2>
+                            <div class="profile_box">
+                                <div class="img_box">
+                                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0506%2Fmobile_183013863440c.jpg%22&type=nf340_228"
+                                    alt="">
+                                </div>
+                                <p class="user_name">dtrix</p>
+                            </div>
+                            <div class="member_info">
+                                <div class="top">
+                                    <h3>기본정보</h3>
+                                    <span>필수항목</span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <span class="required">이름</span>
+                                        </div>
+                                        <div>
+                                            <span>김승준</span>
+                                            <button>변경</button>
+                                            <i>* 개명으로 이름이 변경된 경우 이름 변경가능</i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="required">생년월일</span>
+                                        </div>
+                                        <div>
+                                            <span>1980년 1월 1일</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="required">휴대폰번호</span>
+                                        </div>
+                                        <div>
+                                            <span>010-1234-5678</span>
+                                            <button>변경</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="required">이메일</span>
+                                        </div>
+                                        <div>
+                                            <input type="text" value="dytrix@mail.com">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span class="required">비밀번호</span>
+                                        </div>
+                                        <div>
+                                            <button>변경</button>
+                                            <i>* 마지막 비밀번호 변경 : 3분 전 (2020-03-05)</i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>주소</span>
+                                        </div>
+                                        <div>
+                                            <button>우편번호 검색</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="simple_login">
+                                <h3>간편로그인 계정연동</h3>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th style="width:15%">구분</th>
+                                            <th style="width:auto">연동정보</th>
+                                            <th style="width:15%">연결</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>페이스북</td>
+                                            <td>연결된 계정정보 없음</td>
+                                            <td><button class="btn_on">연동</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>네이버</td>
+                                            <td>dytrix@naver.com</td>
+                                            <td><button>연동취소</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>카카오</td>
+                                            <td>연결된 계정정보 없음</td>
+                                            <td><button class="btn_on">연동</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>페이코</td>
+                                            <td>연결된 계정정보 없음</td>
+                                            <td><button class="btn_on">연동</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="btn_box">
+                                <button class="btn_on">변경</button>
+                                <button>회원탈퇴</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</article>
+		<footer>
+			<ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+    </div>
+    <article class="layer_popup">
+        <main>
+            <h2>본인확인 수단 선택</h2>
+            <div class="layer_container">
+                <p class="txt">이름을 변경하기 위한 본인 확인 수단을 선택해주세요. <br>
+                단, 개명된 이름으로 가입된 본인명의의 휴대전화 또는 아이핀으로만 가능합니다.</p>
+                <div class="btn_certification">
+                    <button>
+                        <img src="assets/img/btn-certification-phone.svg" alt=""><br>
+                        휴대폰 인증
+                    </button>
+                    <button>
+                        <img src="assets/img/btn-certification-ipin.svg" alt=""><br>
+                        아이핀 인증
+                    </button>
+                </div>
+                <div class="inner_box">
+                    <p>* 신용평가기관에 개명된 이름이 먼저 등록되어 있어야 합니다.</p>
+                    <p>* 본인인증을 위해 입력하신 정보는 해당 인증기관에서 직접 수집하며 인증 이외의 용도로 이용 또는 저장되지 않습니다.</p>
+                </div>
+            </div>
+            <a href="#a" class="btn_closed_layer"><img src="assets/img/btn-close-black.svg" alt=""></a>
+        </main>
+    </article>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Test</title>
+    <link rel="shortcut icon" href="#">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="assets/misc/js/swiper.js"></script>
+    <link rel="stylesheet" href="assets/misc/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/misc/css/common.css">
+    <link rel="stylesheet" href="assets/misc/css/ticket.css">
+    <link rel="stylesheet" href="assets/misc/css/booking.css">
+</head>
+
+<body class="">
+    <div data-role="page" id="seat_selection">
+        <div class="booking_main seat_selection">
+            <header class="booking_header">
+                <a href="#a" data-rel="back" class="btn_left btn_back"><img
+                        src="assets/misc/img/my/btn-back.svg" alt="뒤로가기"></a>
+                <strong class="tit">좌석선택</strong>
+            </header>
+            <div class="seat_info_top">
+                <div class="txt">인원선택</div>
+                <a href="#a" data-role="none" data-transition="slideup"
+                    class="btn_select_info">인원선택</a>
+            </div>
+            <div class="seat_info">
+                <div class="seat_sys"><img src="assets/misc/img/booking/seat.png" alt=""></div>
+            </div>
+            <div class="seat_payment">
+                <div class="movie_info">
+                    <p class="tit">엑시트 2D</p>
+                    <p class="t1">2관 12세 이상 관람가</p>
+                    <p class="t1">19.08.01(목) 22:25</p>
+                </div>
+                <a href="#a" class="btn_payment">
+                    <span>
+                        <b>12,000원</b>
+                        <b>결제하기</b>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="layer_popup">
+        <main>
+            <h2>최대인원선택</h2>
+            <div class="layer_container">
+                <p class="txt">한번에 최대 예매 가능한 인원 수는 <b>8명</b>입니다. <br>
+                    단체관람의 경우 단체/대관 문의를 이용해주세요.</p>
+                <div class="btn_box">
+                    <a href="#a" class="btn_inquiry">단체/대관 문의</a>
+                    <a href="#a" class="btn_ok">확인</a>
+                </div>
+            </div>
+            <a href="#a" class="btn_closed_layer"><img src="assets/img/btn-close-black.svg" alt=""></a>
+        </main>
+    </div>
+    <div class="layer_full seat_selection_ly" id="seat_selection_ly" data-role="page">
+        <div class="tit">인원선택</div>
+        <div class="inner">
+            <div class="seat_input">
+                <ul>
+                    <li>
+                        <span>성인</span>
+                        <div>
+                            <button class="btn_minus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-minus.svg" alt="빼기"></button>
+                            <span class="p_num">0</span>
+                            <button class="btn_plus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-plus.svg" alt="더하기"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <span>경로(만 65세이상)</span>
+                        <div>
+                            <button class="btn_minus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-minus.svg" alt="빼기"></button>
+                            <span class="p_num">0</span>
+                            <button class="btn_plus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-plus.svg" alt="더하기"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <span>청소년</span>
+                        <div>
+                            <button class="btn_minus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-minus.svg" alt="빼기"></button>
+                            <span class="p_num">0</span>
+                            <button class="btn_plus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-plus.svg" alt="더하기"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <span>군인(용사)</span>
+                        <div>
+                            <button class="btn_minus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-minus.svg" alt="빼기"></button>
+                            <span class="p_num">0</span>
+                            <button class="btn_plus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-plus.svg" alt="더하기"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <span>장애인</span>
+                        <div>
+                            <button class="btn_minus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-minus.svg" alt="빼기"></button>
+                            <span class="p_num">0</span>
+                            <button class="btn_plus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-plus.svg" alt="더하기"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <span>국가유공자</span>
+                        <div>
+                            <button class="btn_minus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-minus.svg" alt="빼기"></button>
+                            <span class="p_num">0</span>
+                            <button class="btn_plus" data-role="none"><img
+                                    src="assets/misc/img//booking/btn-stepper-plus.svg" alt="더하기"></button>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#a" class="btn_select">선택완료 (최대 8명까지 선택 가능)</a>
+            </div>
+        </div>
+        <a href="#a" class="layer_closed" data-transition="slidedown" data-rel="back"><img
+                src="assets/misc/img//common/btn-close.svg" alt=""></a>
+    </div>
+    <script type="text/javascript" src="assets/misc/js/ui.js?2324"></script>
+    <script type="text/javascript" src="assets/misc/js/booking.js?1324"></script>
+</body>
+
+</html>

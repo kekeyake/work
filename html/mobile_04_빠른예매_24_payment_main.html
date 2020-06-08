@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Test</title>
+    <link rel="shortcut icon" href="#">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="assets/misc/js/swiper.js"></script>
+    <link rel="stylesheet" href="assets/misc/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/misc/css/common.css">
+    <link rel="stylesheet" href="assets/misc/css/ticket.css">
+    <link rel="stylesheet" href="assets/misc/css/booking.css">
+</head>
+
+<body class="">
+    <div data-role="page" id="payment_box">
+        <div class="booking_main">
+            <header class="booking_header">
+                <a href="02_setting_02_main_login.html" data-rel="back" class="btn_left btn_back"><img
+                        src="assets/misc/img//my/btn-back.svg" alt="뒤로가기"></a>
+                <strong class="tit">결제</strong>
+            </header>
+            <div class="payment_box">
+                <div class="payment_movie">
+                    <div class="movie_img"><img src="assets/misc/img//movie/@thumb01.jpg" alt=""></div>
+                    <div class="movie_info">
+                        <p class="tit">엑시트</p>
+                        <p class="stit">EXIT</p>
+                        <p class="date"><span>2019년 8월 8일</span><span>17:10 ~ <em>19:03</em></span></p>
+                        <p class="cinema"><span>고한시네마 1관</span><span>2명</span><span>2D</span></p>
+                        <p class="seat_num">B15, B16, B17, B15, B16, B17, B15, B16</p>
+                    </div>
+                </div>
+                <ul class="point_info">
+                    <li class="disabled">
+                        <!-- 비활성화 클래스 -->
+                        <div class="info_top btn_link_coupon">
+                            <span>1.할인쿠폰</span>
+                            <span>
+                                <strong>-1,000</strong>
+                                <!-- <a href="#a" class="btn_payment"></a> 폴딩 삭제 -->
+                                <a href="#a" class=""></a>
+                            </span>
+                        </div>
+                        <div class="info_list_box">
+                            <ul>
+                                <li>
+                                    <p>A 할인쿠폰 [보유:2000]</p>
+                                </li>
+                                <li>
+                                    <p>B 할인쿠폰 [보유:0]</p>
+                                </li>
+                            </ul>
+                            <button data-role="none">적용취소</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info_top btn_link_admission_ticket">
+                            <span>2.관람권</span>
+                            <span>
+                                <strong>-1,000</strong>
+                                <!-- <a href="#a" class="btn_payment"></a> 폴딩 삭제 -->
+                                <a href="#a" class=""></a>
+                            </span>
+                        </div>
+                        <div class="info_list_box">
+                            <ul>
+                                <li>
+                                    <p>무비패스 카드</p>
+                                </li>
+                                <li>
+                                    <p>A 기프트콘</p>
+                                </li>
+                                <li>
+                                    <p>B 예매권</p>
+                                </li>
+                            </ul>
+                            <button data-role="none">적용취소</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info_top ok_cashback btn_link_ok_cashback">
+                            <span>3.OK캐쉬백</span>
+                            <span>
+                                <strong>-1,000</strong>
+                                <a href="#a" class="btn_ok_cashback"></a>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="payment_wrap">
+                    <p class="tit">최종결제</p>
+                    <div class="payment_btn">
+                        <a href="05_booking_13_creditcard.html" data-transition="slide" class="on">신용카드</a>
+                        <a href="#a">간편결제 <br>(준비중)</a>
+                        <a href="#a">휴대폰 결제 <br>(준비중)</a>
+                    </div>
+                </div>
+                <div class="refund_policy">
+                    <p class="tit">
+                        <a href="#a" class="btn_refund_policy">취소/환불규정을 확인해주세요.</a>
+                    </p>
+                    <div>1. 예매취소
+                        부분취소는 불가합니다.(예: 4장을 온라인으로 예매한 경우 4장 모두 취소만 가능)
+                        모바일 앱/웹 예매 취소는 영화 상영 시작 시간 15분전까지 가능합니다.
+                        홈페이지 예매 취소는 상영 시작 시간 20분전까지 가능합니다.
+                        현장취소를 하는 경우, 상영시간 이전까지만 가능하며 영화 상영 시작 시간 이후 취소나 환불이 되지 않습니다.
+                    </div>
+                </div>
+            </div>
+            <div class="final_payment_box">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <strong>총액</strong>
+                            <span>8,000 원</span>
+                        </li>
+                        <li>
+                            <strong>할인쿠폰</strong>
+                            <span>-1,000 원</span>
+                        </li>
+                        <li>
+                            <strong>관람권</strong>
+                            <span>0</span>
+                        </li>
+                        <li>
+                            <strong>OK캐쉬백</strong>
+                            <span>0</span>
+                        </li>
+                    </ul>
+                    <p class="total">
+                        <strong>최종 결제금액</strong>
+                        <span>7,000 원</span>
+                    </p>
+                </div>
+                <a href="#a" class="btn_payment">결제하기</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/misc/js/ui.js?2324"></script>
+    <script type="text/javascript" src="assets/misc/js/booking.js?1324"></script>
+</body>
+
+</html>

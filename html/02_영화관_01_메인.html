@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2"></div>
+	<div class="wrap">
+		<header>
+            <div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <button class="btn_menu m_br"><img src="assets/img/btn-menu.svg" alt="모바일메뉴"></button>
+                <button class="btn_ticket m_br"><img src="assets/img/btn-ticket.svg" alt="티켓"></button>
+                <nav>
+                    <ul>
+                        <li class="on m_br"><a href="#a">홈 화면</a></li>
+                        <li><a href="#a">영화관찾기</a></li>
+                        <li><a href="#a">영화검색</a></li>
+                        <li><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                    <p class="m_copy m_br">© 2020 DTRYX.</p>
+                </nav>
+                <div class="nav_dimmed"></div>
+            </div>
+		</header>
+		<article class="cinema_main">
+			<section class="cinema_top">
+                <div class="inner">
+                    <h1>아트하우스 모모 <img src="assets/img/ico_cine_01.png" alt=""></h1>
+                    <ul class="sns_list">
+                        <li><a href="#a"><img src="assets/img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#a"><img src="assets/img/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#a"><img src="assets/img/youtube.png" alt="youtube"></a></li>
+                        <li><a href="#a"><img src="assets/img/instagram.png" alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="cinema_cont">
+                <div class="inner">
+                    <ul class="tab_list">
+                        <li><a href="#a">영화관소개</a></li>
+                        <li><a href="#a">예매하기</a></li>
+                        <li><a href="#a">상영시간표</a></li>
+                    </ul>
+                    <section class="banner_box">
+                        <div class="swiper-container banner_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/@banner.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/@banner.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/@banner.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </section>
+                    <section class="movie_list">
+                        <div class="movie_list_top">
+                            <a href="#a" class="on">현재 상영중</a>
+                            <a href="#a">상영예정작</a>
+                        </div>
+                        <div class="swiper-container movie_swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="assets/img/@thumb01.jpg" alt="">
+                                    </div>
+                                    <p class="movie_tit"><span class="tit">몽마르트 파파</span> <span class="view_age a12">12</span></p>
+                                    <p class="movie_info">20.03.15 개봉 <span class="movie_point"><img src="assets/img/ic-star-small-on.png"
+                                                alt="">4.5</span></p>
+                                    <button class="btn_ticketing">예매</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="assets/img/@thumb02.jpg" alt="">
+                                    </div>
+                                    <p class="movie_tit"><span class="tit">원더</span> <span class="view_age all">전체</span></p>
+                                    <p class="movie_info">20.03.15 개봉 <span class="movie_point"><img src="assets/img/ic-star-small-on.png"
+                                                alt="">4.5</span></p>
+                                    <button class="btn_ticketing">예매</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="assets/img/@thumb03.jpg" alt="">
+                                    </div>
+                                    <p class="movie_tit"><span class="tit">미스터 주: 사라진 VIP</span> <span class="view_age a15">15</span></p>
+                                    <p class="movie_info">20.03.15 개봉 <span class="movie_point"><img src="assets/img/ic-star-small-on.png"
+                                                alt="">4.5</span></p>
+                                    <button class="btn_ticketing">예매</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="assets/img/@thumb04.jpg" alt="">
+                                    </div>
+                                    <p class="movie_tit"><span class="tit">해치지않아</span> <span class="view_age a19">청불</span></p>
+                                    <p class="movie_info">20.03.15 개봉 <span class="movie_point"><img src="assets/img/ic-star-small-on.png"
+                                                alt="">4.5</span></p>
+                                    <button class="btn_ticketing">예매</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="assets/img/@thumb01.jpg" alt="">
+                                    </div>
+                                    <p class="movie_tit"><span class="tit">몽마르트 파파</span> <span class="view_age a12">12</span></p>
+                                    <p class="movie_info">20.03.15 개봉 <span class="movie_point"><img src="assets/img/ic-star-small-on.png"
+                                                alt="">4.5</span></p>
+                                    <button class="btn_ticketing">예매</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="assets/img/@thumb02.jpg" alt="">
+                                    </div>
+                                    <p class="movie_tit"><span class="tit">원더</span> <span class="view_age all">전체</span></p>
+                                    <p class="movie_info">20.03.15 개봉 <span class="movie_point"><img src="assets/img/ic-star-small-on.png"
+                                                alt="">4.5</span></p>
+                                    <button class="btn_ticketing">예매</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="assets/img/@thumb03.jpg" alt="">
+                                    </div>
+                                    <p class="movie_tit"><span class="tit">미스터 주: 사라진 VIP</span> <span class="view_age a15">15</span></p>
+                                    <p class="movie_info">20.03.15 개봉 <span class="movie_point"><img src="assets/img/ic-star-small-on.png"
+                                                alt="">4.5</span></p>
+                                    <button class="btn_ticketing">예매</button>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="img_box">
+                                        <img src="assets/img/@thumb04.jpg" alt="">
+                                    </div>
+                                    <p class="movie_tit"><span class="tit">해치지않아</span> <span class="view_age a19">청불</span></p>
+                                    <p class="movie_info">20.03.15 개봉 <span class="movie_point"><img src="assets/img/ic-star-small-on.png"
+                                                alt="">4.5</span></p>
+                                    <button class="btn_ticketing">예매</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </section>
+                    <section class="screening_schedule">
+                        <h2>상영시간표</h2>
+                        <div class="day_paging">
+                            <a href="#a"><img src="assets/img/ic-arrow-left.png" alt="이전"></a>
+                            <strong>11월 19일 (토)</strong>
+                            <a href="#a"><img src="assets/img/ic-arrow-right.png" alt="다음"></a>
+                        </div>
+                        <ul class="movie_schedule_wrap">
+                            <li>
+                                <div class="movie_title">
+                                    <p>와일드로즈</p>
+                                    <span>1관</span>
+                                </div>
+                                <div class="movie_schedule_list">
+                                    <ul>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">08:00</p>
+                                            <p class="etime">09:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">08:00</p>
+                                            <p class="etime">09:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">08:00</p>
+                                            <p class="etime">09:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">08:00</p>
+                                            <p class="etime">09:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">08:00</p>
+                                            <p class="etime">09:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie_title">
+                                    <p>혐오스런 마츠코의 일생</p>
+                                    <span>2관</span>
+                                </div>
+                                <div class="movie_schedule_list">
+                                    <ul>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie_title">
+                                    <p>다크워터스</p>
+                                    <span>2관</span>
+                                </div>
+                                <div class="movie_schedule_list">
+                                    <ul>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie_title">
+                                    <p>세인트아가타</p>
+                                    <span>2관</span>
+                                </div>
+                                <div class="movie_schedule_list">
+                                    <ul>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                        <li>
+                                            <p class="stime">06:00</p>
+                                            <p class="etime">07:30</p>
+                                            <p class="seat"><b>23</b>/330석</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <aside><a href="#a"><img src="assets/img/banner-sample-01.png" alt=""></a></aside>
+                    <section class="cont_box">
+                        <div class="notice_box">
+                            <h2>공지사항</h2>
+                            <ul>
+                                <li>
+                                    <a href="#a">
+                                        <span class="text">[종영안내] <더 킹: 헨리 5세> 2019.10.23 - 11.4</span>
+                                        <span class="date">2019.10.31</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        <span class="text">[종영안내] <더 킹: 헨리 5세> 2019.10.23 - 11.4</span>
+                                        <span class="date">2019.10.31</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        <span class="text">[종영안내] <더 킹: 헨리 5세> 2019.10.23 - 11.4</span>
+                                        <span class="date">2019.10.31</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        <span class="text">[종영안내] <더 킹: 헨리 5세> 2019.10.23 - 11.4</span>
+                                        <span class="date">2019.10.31</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#a" class="btn_more">더보기</a>
+                        </div>
+                        <div class="qna_box">
+                            <h2>자주 묻는 질문</h2>
+                            <ul>
+                                <li>
+                                    <a href="#a">
+                                        Q. [관람 등급] 청소년 관람 불가 등급의 영화를 보호자 동반하여 관람할 수 있...
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        Q. [최대 예매 좌석] 영화 예매 시 최대 예매 가능한 좌석은 몇 석인가요?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        Q. [관람 요금] 영화 관람 요금에 대해 알려주세요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        Q. [예매 시 오류] 영화관 홈페이지에서 인터넷 예매를 할 때 오류가 발생합니다…
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#a" class="btn_more">더보기</a>
+                        </div>
+                    </section>
+                    <section class="location_box">
+                        <h2>위치안내</h2>
+                        <div class="map_box">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.609839796642!2d126.9481192153116!3d37.564255079798286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9881171e7575%3A0x10cde8e22f5a676e!2z7ISc7Jq47Yq567OE7IucIOyEnOuMgOusuOq1rCDrtoHslYTtmITrj5kg7J207ZmU7Jes64yA6ri4IDUy!5e0!3m2!1sko!2skr!4v1588546745058!5m2!1sko!2skr"
+                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <div class="loc_list">
+                                <h3>오시는길</h3>
+                                <p>[03760] 서울특별시 서대문구 이화여대길 52 <br>(대현동, 이화여자대학교 ECC B402) <br>아트하우스 모모는 이화여자대학교 내 "ECC 건물"에 위치하고 있습니다.</p>
+                                <h3>연락처</h3>
+                                <p>02-363-5333</p>
+                                <h3>주차안내</h3>
+                                <p>이화여대 지하주차장 D블록 1번 엘리베이터를 이용하여 <br>B4층으로 오시면 편합니다.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="cinema_pic">
+                        <h2>영화관 사진</h2>
+                        <div class="swiper-container swiper_cinema">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide cinema_img">
+                                    <img src="assets/img/@img01.png" alt="">
+                                    <p>도심 속의 푸르른 산책로를 만날 수 있는 영화관</p>
+                                </div>
+                                <div class="swiper-slide cinema_img">
+                                    <img src="assets/img/@img01.png" alt="">
+                                    <p>세계적인 건축가 도미니크 페로의 예술적인 건축물 안에 자리한 고품격 영화관</p>
+                                </div>
+                                <div class="swiper-slide cinema_img">
+                                    <img src="assets/img/@img01.png" alt="">
+                                    <p>작품성과 대중성을 고루 갖춘 전세계의 다양한 영화를 만날 수 있는 영화관</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </section>
+                </div>
+            </section>
+		</article>
+		<footer>
+			<ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+        <div class="cinema_slider_layer">
+            <div class="swiper-container layer_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/@img01.png" alt="">
+                        <p>도심 속의 푸르른 산책로를 만날 수 있는 영화관</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/@img01.png" alt="">
+                        <p>세계적인 건축가 도미니크 페로의 예술적인 건축물 안에 자리한 고품격 영화관</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/@img01.png" alt="">
+                        <p>작품성과 대중성을 고루 갖춘 전세계의 다양한 영화를 만날 수 있는 영화관</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <a href="#a" class="btn_closed_popup"><img src="assets/img/btn-close.svg" alt=""></a>
+        </div>
+    </div>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script>
+        var swiper = new Swiper('.banner_swiper', {
+            pagination: {
+                el: '.banner_box .swiper-pagination',
+            },
+            loop: true,
+            navigation: {
+                nextEl: '.banner_box .swiper-button-next',
+                prevEl: '.banner_box .swiper-button-prev',
+            },
+        });
+        var swiper2 = new Swiper('.movie_swiper', {
+            slidesPerView: 4,
+            spaceBetween: 48,
+            // loop: true,
+
+            navigation: {
+                nextEl: '.movie_list .swiper-button-next',
+                prevEl: '.movie_list .swiper-button-prev',
+            },
+            breakpoints: {
+                980: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16,
+                    pagination: {
+                        el: '.cont1 .swiper-pagination',
+                    },
+                },
+            }
+        });
+        var swiper3 = new Swiper('.swiper_cinema', {
+            slidesPerView: 3,
+            spaceBetween: 29,
+            // loop: true,
+            navigation: {
+                nextEl: '.cinema_pic .swiper-button-next',
+                prevEl: '.cinema_pic .swiper-button-prev',
+            },
+            breakpoints: {
+                980: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16,
+                    pagination: {
+                        el: '.cinema_pic .swiper-pagination',
+                    },
+                },
+            }
+        });
+        var swiper4 = new Swiper('.layer_swiper', {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: '.cinema_slider_layer .swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.cinema_slider_layer .swiper-button-next',
+                prevEl: '.cinema_slider_layer .swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

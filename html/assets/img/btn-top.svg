@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="40" cy="40" r="40" fill="#333"/>
+        <text fill="#FFF" font-family="SpoqaHanSans-Regular, SpoqaHanSans" font-size="16">
+            <tspan x="24" y="65">TOP</tspan>
+        </text>
+        <path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M34 37.5L34 25.5 46 25.5" transform="rotate(45 40 31.5)"/>
+        <path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M28 19.5L52 19.5M40 45.5L40 23.5"/>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="400" viewBox="0 0 360 400">
+    <defs>
+        <radialGradient id="a" cy="0%" r="100%" fx="50%" fy="0%" gradientTransform="matrix(0 1 -.63333 0 .5 -.5)">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#F7F7F7" stop-opacity="0"/>
+        </radialGradient>
+        <path id="c" d="M63 38c39.504 2.667 78.504 4 117 4 38.496 0 77.496-1.333 117-4v128c-38.041-2.667-77.041-4-117-4s-78.959 1.333-117 4V38z"/>
+        <filter id="b" width="151.3%" height="193.8%" x="-25.6%" y="-46.9%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="20"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0h360v400H0z" opacity=".2"/>
+        <path fill="url(#a)" d="M297 166l63 100.37V390H0V266.37L63 166c39.167-2.667 78.167-4 117-4 25.889 0 64.889 1.333 117 4z" opacity=".15"/>
+        <g>
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="#FFF" xlink:href="#c"/>
+        </g>
+        <text fill="#999" font-family="AvenirNext-DemiBold, Avenir Next" font-size="16" font-weight="500" letter-spacing="4">
+            <tspan x="143.232" y="78">ERROR</tspan>
+        </text>
+        <text fill="#333" font-family="AvenirNext-Bold, Avenir Next" font-size="46" font-weight="bold">
+            <tspan x="135.426" y="129">404</tspan>
+        </text>
+    </g>
+</svg>

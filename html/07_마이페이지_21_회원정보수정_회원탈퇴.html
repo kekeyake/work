@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2"></div>
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#a" class="btn_find_nav">영화관찾기</a></li>
+                        <li><a href="#a" class="btn_search_nav">영화검색</a></li>
+                        <li class="on"><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article class="detail_sub">
+            <section class="detail_cont">
+                <div class="inner">
+                    <div class="mypage_wrap">
+                        <div class="side_nav">
+                            <h2>My Page</h2>
+                            <ul>
+                                <li><a href="#a">예매/구매내역</a></li>
+                                <li><a href="#a">영화 관람권</a></li>
+                                <li><a href="#a">멤버쉽포인트</a></li>
+                                <li><a href="#a">내가 본 영화 <span>1</span></a></li>
+                                <li><a href="#a">내가 쓴 감상평</a></li>
+                                <li><a href="#a">1:1 문의</a></li>
+                                <li class="on"><a href="#a">회원정보 수정</a></li>
+                                <li><a href="#a">선택정보 수정</a></li>
+                            </ul>
+                        </div>
+                        <div class="mypage_cont">
+                            <h2>회원탈퇴</h2>
+                            <div class="withdrawal_desc_list">
+                                <p class="t1">회원탈퇴를 신청하기 전에 안내 사항을 꼭 확인해주세요.</p>
+                                <p class="t2">01. 30일간 회원 재가입 불가능</p>
+                                <p class="t3">회원탈퇴 후, 30일 경과 후 재가입할 수 있습니다.</p><br>
+                                <p class="t2">02. 탈퇴 후 삭제 내역</p>
+                                <p class="t3">탈퇴하시면 회원정보와 개인 보유 포인트 등 정보가 삭제되며 데이터는 복구되지 않습니다.</p>
+                                <ul>
+                                    <li>- 멤버쉽 포인트 및 적립 / 차감 내역</li>
+                                    <li>- 관람권 및 쿠폰</li>
+                                    <li>- 영화관람 내역</li>
+                                    <li>- 간편 로그인 연동 정보</li>
+                                </ul>
+                            </div>
+                            <div class="question_withdrawal_list">
+                                <h2>불편했던 점, 아쉬웠던 점을 알려주세요.</h2>
+                                <p class="stit">앞으로 더 나은 모습으로 찾아 뵙겠습니다.</p>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="withdrawal" id="w1">
+                                        <label for="w1">서비스 장애가 잦음</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="withdrawal" id="w2">
+                                        <label for="w2">이벤트 및 무료 서비스가 부족</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="withdrawal" id="w3">
+                                        <label for="w3">불만 및 불편사항에 대한 고객서비스에 대한 불만족</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="withdrawal" id="w4">
+                                        <label for="w4">이용빈도가 낮고 개인정보 유출 우려됨</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="withdrawal" id="w5">
+                                        <label for="w5">탈퇴 후 재가입을 위함</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="withdrawal" id="w6">
+                                        <label for="w6">휴면계정 만료</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="withdrawal" id="w7">
+                                        <label for="w7">기타</label>
+                                        <input type="text">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="password_input">
+                                <p>비밀번호 입력 후 탈퇴 버튼을 누르면 탈퇴 처리됩니다.</p>
+                                <input type="text" placeholder="비밀번호 입력">
+                            </div>
+                            <div class="btn_box">
+                                <button>취소</button>
+                                <button class="btn_on">탈퇴</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+    </div>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+
+</html>

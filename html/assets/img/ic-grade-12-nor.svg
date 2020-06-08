@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="16" height="16" fill="#3F9BD8" rx="8"/>
+        <text fill="#FFF" font-family="SpoqaHanSans-Regular, SpoqaHanSans" font-size="9">
+            <tspan x="2.636" y="11">12</tspan>
+        </text>
+    </g>
+</svg>

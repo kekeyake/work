@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2"></div>
+	<div class="wrap">
+        <header>
+            <div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <button class="btn_menu m_br"><img src="assets/img/btn-menu.svg" alt="모바일메뉴"></button>
+                <button class="btn_ticket m_br"><img src="assets/img/btn-ticket.svg" alt="티켓"></button>
+                <nav>
+                    <ul>
+                        <li class="on m_br"><a href="#a">홈 화면</a></li>
+                        <li><a href="#a">영화관찾기</a></li>
+                        <li><a href="#a">영화검색</a></li>
+                        <li><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                    <p class="m_copy m_br">© 2020 DTRYX.</p>
+                </nav>
+                <div class="nav_dimmed"></div>
+            </div>
+        </header>
+		<article class="detail_main">
+			<section class="detail_top" style="background:url(https://movie-phinf.pstatic.net/20200407_105/1586221588109pHOpS_JPEG/movie_image.jpg) no-repeat 50% 50% / cover;">
+                <div class="inner">
+                    <div class="movie_info">
+                        <div class="img_box">
+                            <img src="https://movie-phinf.pstatic.net/20200407_105/1586221588109pHOpS_JPEG/movie_image.jpg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p class="movie_name"><strong>원더</strong> <span class="view_age a12 m_br">12</span></p>
+                            <p class="movie_name_e">Wonder</p>
+                            <ul class="info_list">
+                                <li>전체관람가</li>
+                                <li>2017년 개봉</li>
+                                <li>드라마/가족</li>
+                                <li>2시간 35분</li>
+                            </ul>
+                            <div class="movie_point">
+                                <div class="join_point">
+                                    <img src="assets/img/ic-star-small-on.png" alt="">
+                                    <span>4.2 / 5</span>
+                                </div>
+                                <div class="participation">124,814 명 참여</div>
+                            </div>
+                            <div class="input_point">
+                                <div>
+                                    <input type="checkbox" id="star1">
+                                    <label for="star1"></label>
+                                    <input type="checkbox" id="star2">
+                                    <label for="star2"></label>
+                                    <input type="checkbox" id="star3">
+                                    <label for="star3"></label>
+                                    <input type="checkbox" id="star4">
+                                    <label for="star4"></label>
+                                    <input type="checkbox" id="star5">
+                                    <label for="star5"></label>
+                                    <span>3 / 5</span>
+                                </div>
+                                <button>확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <a href="#a" class="btn_ticketing">예매하기</a>
+                        <a href="#a" class="btn_review">예고편보기</a>
+                    </div>
+                </div>
+            </section>
+            <section class="detail_cont">
+                <div class="inner">
+                    <div class="scroll_x">
+                        <ul class="tab_list">
+                            <li><a href="#a">주요정보</a></li>
+                            <li><a href="#a">배우/제작진</a></li>
+                            <li class="active"><a href="#a">상영 영화관</a></li>
+                            <li><a href="#a">별점/감상평</a></li>
+                            <li><a href="#a">예고편/스틸컷</a></li>
+                            <li><a href="#a">관련기사/블로그</a></li>
+                        </ul>
+                    </div>
+                    <div class="cont_box">
+                        <h2>전체(14)</h2>
+                        <ul class="cinema_list">
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>아트하우스모모</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>인디스페이스</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>아리랑시네센터</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>가람영화관</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>씨네큐브</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>대한극장</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>홍천시네마</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>청양시네마</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>평창시네마</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>영천별빛영화관</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>부안마실영화관</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>고한시네마</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>고한시네마</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>아트하우스모모</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont_box">
+                        <h2>서울(8)</h2>
+                        <ul class="cinema_list">
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>아트하우스모모</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>인디스페이스</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>아리랑시네센터</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>가람영화관</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>씨네큐브</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>대한극장</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>홍천시네마</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>청양시네마</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont_box">
+                        <h2>경북(3)</h2>
+                        <ul class="cinema_list">
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>아트하우스모모</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>인디스페이스</span>
+                            </li>
+                            <li>
+                                <img src="assets//img/@cinema_logo.png" alt="">
+                                <span>아리랑시네센터</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <aside><a href="#a"><img src="assets/img/banner-sample-01.png" alt=""></a></aside>
+            </section>
+		</article>
+		<footer>
+			<ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+    </div>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2"></div>
+	<div class="wrap">
+        <header>
+            <div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <button class="btn_menu m_br"><img src="assets/img/btn-menu.svg" alt="모바일메뉴"></button>
+                <button class="btn_ticket m_br"><img src="assets/img/btn-ticket.svg" alt="티켓"></button>
+                <nav>
+                    <ul>
+                        <li class="on m_br"><a href="#a">홈 화면</a></li>
+                        <li><a href="#a">영화관찾기</a></li>
+                        <li><a href="#a">영화검색</a></li>
+                        <li><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                    <p class="m_copy m_br">© 2020 DTRYX.</p>
+                </nav>
+                <div class="nav_dimmed"></div>
+            </div>
+        </header>
+		<article class="detail_main">
+			<section class="detail_top" style="background:url(https://movie-phinf.pstatic.net/20200407_105/1586221588109pHOpS_JPEG/movie_image.jpg) no-repeat 50% 50% / cover;">
+                <div class="inner">
+                    <div class="movie_info">
+                        <div class="img_box">
+                            <img src="https://movie-phinf.pstatic.net/20200407_105/1586221588109pHOpS_JPEG/movie_image.jpg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p class="movie_name"><strong>원더</strong> <span class="view_age a12 m_br">12</span></p>
+                            <p class="movie_name_e">Wonder</p>
+                            <ul class="info_list">
+                                <li>전체관람가</li>
+                                <li>2017년 개봉</li>
+                                <li>드라마/가족</li>
+                                <li>2시간 35분</li>
+                            </ul>
+                            <div class="movie_point">
+                                <div class="join_point">
+                                    <img src="assets/img/ic-star-small-on.png" alt="">
+                                    <span>4.2 / 5</span>
+                                </div>
+                                <div class="participation">124,814 명 참여</div>
+                            </div>
+                            <div class="input_point">
+                                <div>
+                                    <input type="checkbox" id="star1">
+                                    <label for="star1"></label>
+                                    <input type="checkbox" id="star2">
+                                    <label for="star2"></label>
+                                    <input type="checkbox" id="star3">
+                                    <label for="star3"></label>
+                                    <input type="checkbox" id="star4">
+                                    <label for="star4"></label>
+                                    <input type="checkbox" id="star5">
+                                    <label for="star5"></label>
+                                    <span>3 / 5</span>
+                                </div>
+                                <button>확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <a href="#a" class="btn_ticketing">예매하기</a>
+                        <a href="#a" class="btn_review">예고편보기</a>
+                    </div>
+                </div>
+            </section>
+            <section class="detail_cont">
+                <div class="inner">
+                    <div class="scroll_x">
+                        <ul class="tab_list">
+                            <li><a href="#a">주요정보</a></li>
+                            <li><a href="#a">배우/제작진</a></li>
+                            <li><a href="#a">상영 영화관</a></li>
+                            <li class="active"><a href="#a">별점/감상평</a></li>
+                            <li><a href="#a">예고편/스틸컷</a></li>
+                            <li><a href="#a">관련기사/블로그</a></li>
+                        </ul>
+                    </div>
+                    <div class="cont_box">
+                        <h2>별점 분포도</h2>
+                        <div class="star_distribution">
+                            <div class="pc_tbl pc_br">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th style="width:auto;"></th>
+                                            <th style="width:112px;">전체연령</th>
+                                            <th style="width:112px;">18세 이하</th>
+                                            <th style="width:112px;">18세~29세</th>
+                                            <th style="width:112px;">30세~44세</th>
+                                            <th style="width:104px;">45세 이상</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>전체</th>
+                                            <td>
+                                                <div class="star_distribution_box on">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>남성</th>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>여성</th>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="star_distribution_box">
+                                                    <p class="star_1">
+                                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                                        <span>4.1</span>
+                                                    </p>
+                                                    <p>124,839명</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="m_point_box m_br">
+                                <div class="star_point">
+                                    <span class="mask"></span>
+                                </div>
+                                <p class="point_txt">4.5점 / 5점</p>
+                                <p class="txt">30,719명</p>
+                            </div>
+                            <ul class="point_list">
+                                <li>
+                                    <div class="star_lv">
+                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                        <b>5</b>
+                                    </div>
+                                    <div class="graph_box">
+                                        <span style="width:49.3%"></span>
+                                    </div>
+                                    <div class="praph_txt">49.3%</div>
+                                    <div class="people">49,588명</div>
+                                </li>
+                                <li>
+                                    <div class="star_lv">
+                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                        <b>4</b>
+                                    </div>
+                                    <div class="graph_box">
+                                        <span style="width:30.4%"></span>
+                                    </div>
+                                    <div class="praph_txt">30.4%</div>
+                                    <div class="people">49,588명</div>
+                                </li>
+                                <li>
+                                    <div class="star_lv">
+                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                        <b>3</b>
+                                    </div>
+                                    <div class="graph_box">
+                                        <span style="width:19.3%"></span>
+                                    </div>
+                                    <div class="praph_txt">19.3%</div>
+                                    <div class="people">49,588명</div>
+                                </li>
+                                <li>
+                                    <div class="star_lv">
+                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                        <b>2</b>
+                                    </div>
+                                    <div class="graph_box">
+                                        <span style="width:0.7%"></span>
+                                    </div>
+                                    <div class="praph_txt">0.7%</div>
+                                    <div class="people">88명</div>
+                                </li>
+                                <li>
+                                    <div class="star_lv">
+                                        <img src="assets/img/ic-star-small-on.png" alt="">
+                                        <b>1</b>
+                                    </div>
+                                    <div class="graph_box">
+                                        <span style="width:0.3%"></span>
+                                    </div>
+                                    <div class="praph_txt">0.3%</div>
+                                    <div class="people">88명</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cont_box">
+                        <h2 class="movie_rating">
+                            감상평
+                            <span>총 22,660개</span>
+                            <a href="#a">감상평 등록</a>
+                        </h2>
+                        <ul class="sort_movie_rating">
+                            <li class="on"><a href="#a">공감순</a></li>
+                            <li><a href="#a">비공감순</a></li>
+                            <li><a href="#a">최신순</a></li>
+                        </ul>
+                        <ul class="movie_rating_list">
+                            <li>
+                                <div class="user_info_box">
+                                    <div class="img_box"><img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F107%2F202004201427373871.jpg&type=u120_150&quality=95" alt=""></div>
+                                    <div class="write_info">
+                                        <p class="user_name ellipsis">dytrix</p>
+                                        <p class="date">2분 전</p>
+                                    </div>
+                                </div>
+                                <div class="comment_box_wrap">
+                                    <div class="comment_box">
+                                        <div class="star_pt">
+                                            <img src="assets/img/ic-star-small-on.png" alt="">
+                                            <b>5</b>
+                                        </div>
+                                        <p>시간 가는 줄 모르고 봤습니다. 몰입감 최고</p>
+                                        <div class="poll_box">
+                                            <div class="empathy">
+                                                <button><img src="assets/img/btn-thumb-up-nor.svg" alt=""> 공감</button>
+                                                <b>751</b>
+                                            </div>
+                                            <div class="non_empathy">
+                                                <button><img src="assets/img/btn-thumb-down-nor.svg" alt=""> 비공감</button>
+                                                <b>16</b>
+                                            </div>
+                                            <button class="btn_report_layer"><img src="assets/img/btn-list-more.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="report_layer" style="display: block;">
+                                        <p>스포일러나 혹은 욕설/ 비방 등 <br>부적절한 내용이 포함되어 있습니까?</p>
+                                        <a href="#a">신고하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user_info_box">
+                                    <div class="img_box"><img
+                                            src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F107%2F202004201427373871.jpg&type=u120_150&quality=95"
+                                            alt=""></div>
+                                    <div class="write_info">
+                                        <p class="user_name ellipsis">dytrix</p>
+                                        <p class="date">2분 전</p>
+                                    </div>
+                                </div>
+                                <div class="comment_box_wrap">
+                                    <div class="comment_box">
+                                        <div class="star_pt">
+                                            <img src="assets/img/ic-star-small-on.png" alt="">
+                                            <b>5</b>
+                                        </div>
+                                        <p>진짜 별 기대 없이 본 영화인데 영화가 끝나고 말할 수 없는 감동 받았습니다. 이런 좋은 영화 볼 수 있게 해주신 분들께 감사드립니다. 힘든 고난과 역경을 딛고 꿋꿋하게, 그로인해 많은 사람들에게 영감과 힘을 줄 수 있는 영화</p>
+                                        <div class="poll_box">
+                                            <div class="empathy">
+                                                <button><img src="assets/img/btn-thumb-up-nor.svg" alt=""> 공감</button>
+                                                <b>751</b>
+                                            </div>
+                                            <div class="non_empathy">
+                                                <button><img src="assets/img/btn-thumb-down-nor.svg" alt=""> 비공감</button>
+                                                <b>16</b>
+                                            </div>
+                                            <button class="btn_report_layer"><img src="assets/img/btn-list-more.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="report_layer">
+                                        <p>스포일러나 혹은 욕설/ 비방 등 <br>부적절한 내용이 포함되어 있습니까?</p>
+                                        <a href="#a">신고하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user_info_box">
+                                    <div class="img_box"><img
+                                            src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F107%2F202004201427373871.jpg&type=u120_150&quality=95"
+                                            alt=""></div>
+                                    <div class="write_info">
+                                        <p class="user_name ellipsis">dytrix</p>
+                                        <p class="date">2019.12.31</p>
+                                    </div>
+                                </div>
+                                <div class="comment_box_wrap">
+                                    <div class="comment_box">
+                                        <div class="star_pt">
+                                            <img src="assets/img/ic-star-small-on.png" alt="">
+                                            <b>5</b>
+                                        </div>
+                                        <p>진짜 별 기대 없이 본 영화인데 영화가 끝나고 말할 수 없는 감동 받았습니다. 이런 좋은 영화 볼 수 있게 해주신 분들께 감사드립니다. 힘든 고난과 역경을 딛고 꿋꿋하게, 그로인해 많은
+                                            사람들에게 영감과 힘을 줄 수 있는 영화</p>
+                                        <div class="poll_box">
+                                            <div class="empathy">
+                                                <button><img src="assets/img/btn-thumb-up-nor.svg" alt=""> 공감</button>
+                                                <b>751</b>
+                                            </div>
+                                            <div class="non_empathy">
+                                                <button><img src="assets/img/btn-thumb-down-nor.svg" alt=""> 비공감</button>
+                                                <b>16</b>
+                                            </div>
+                                            <button class="btn_report_layer"><img src="assets/img/btn-list-more.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="report_layer">
+                                        <p>스포일러나 혹은 욕설/ 비방 등 <br>부적절한 내용이 포함되어 있습니까?</p>
+                                        <a href="#a">신고하기</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="more_btn m_br">더보기 <img src="assets/img/ico_arrow_down.png" alt=""></div>
+                        <div class="paging pc_br">
+                            <a href="#a"><img src="assets/img/ic-arrow-start.png" alt="처음"></a>
+                            <a href="#a"><img src="assets/img/ic-arrow-left.png" alt="이전"></a>
+                            <a href="#a">1</a>
+                            <a href="#a">2</a>
+                            <a href="#a" class="on">3</a>
+                            <a href="#a">4</a>
+                            <a href="#a">5</a>
+                            <a href="#a"><img src="assets/img/ic-arrow-right.png" alt="다음"></a>
+                            <a href="#a"><img src="assets/img/ic-arrow-end.png" alt="마지막"></a>
+                        </div>
+                    </div>
+                </div>
+                <aside><a href="#a"><img src="assets/img/banner-sample-01.png" alt=""></a></aside>
+            </section>
+		</article>
+		<footer>
+			<ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+    </div>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+
+</html>

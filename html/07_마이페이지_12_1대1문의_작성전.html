@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2"></div>
+	<div class="wrap">
+		<header>
+			<div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#a" class="btn_find_nav">영화관찾기</a></li>
+                        <li><a href="#a"class="btn_search_nav">영화검색</a></li>
+                        <li class="on"><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                </nav>
+            </div>
+		</header>
+		<article class="detail_sub">
+            <section class="detail_cont">
+                <div class="inner">
+                    <div class="mypage_wrap">
+                        <div class="side_nav">
+                            <h2>My Page</h2>
+                            <ul>
+                                <li><a href="#a">예매/구매내역</a></li>
+                                <li><a href="#a">영화 관람권</a></li>
+                                <li><a href="#a">멤버쉽포인트</a></li>
+                                <li><a href="#a">내가 본 영화 <span>1</span></a></li>
+                                <li><a href="#a">내가 쓴 감상평</a></li>
+                                <li class="on"><a href="#a">1:1 문의</a></li>
+                                <li><a href="#a">회원정보 수정</a></li>
+                                <li><a href="#a">선택정보 수정</a></li>
+                            </ul>
+                        </div>
+                        <div class="mypage_cont">
+                            <h2>1:1 문의</h2>
+                            <p class="stit">문의하시기 전 FAQ를 확인하시면 궁금증을 더욱 빠르게 해결하실 수 있습니다. <br>1:1 문의글 답변 운영시간 09:00 ~ 21:00</p>
+                            <div class="checkbox_wrap">
+                                <input type="checkbox" id="check_01" checked="">
+                                <label for="check_01">개인정보 수집에 대한 동의 (필수)</label>
+                            </div>
+                            <div class="required_txt">
+                                귀하께서 문의하신 다음의 내역은 법률에 의거 개인정보 수집·이용에 대한 본인동의가 필요한 항목입니다. <br><br>
+                                
+                                [개인정보의 수집 및 이용목적]<br>
+                                회사는 단체관람/대관 문의 내역의 확인, 요청사항 처리 또는 완료 시 원활한 의사소통 경로 확보를 위해 수집하고 있습니다.<br><br>
+                                
+                                [수집하는 개인정보의 항목]<br>
+                                이름, 연락처, 이메일 주소<br><br>
+                                
+                                [개인정보의 보유기간 및 이용기간]<br>
+                                문의 접수 ~ 처리 완료 후 6개월<br>
+                                (단, 관계법령의 규정에 의하여 보존 할 필요성이 있는 경우에는 관계 법령에 따라 보존)<br>
+                                자세한 내용은 '개인정보 처리방침'을 확인하시기 바랍니다.<br><br>
+
+                                [개인정보의 보유기간 및 이용기간]<br>
+                                문의 접수 ~ 처리 완료 후 6개월<br>
+                                (단, 관계법령의 규정에 의하여 보존 할 필요성이 있는 경우에는 관계 법령에 따라 보존)<br>
+                                자세한 내용은 '개인정보 처리방침'을 확인하시기 바랍니다.<br><br>
+                            </div>
+                            <div class="inquiry_write">
+                                <div class="top">
+                                    <h3>문의글 남기기</h3>
+                                    <span>필수항목</span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div><span class="required">문의유형</span></div>
+                                        <div>
+                                            <select name="" id="">
+                                                <option value="">일반문의</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><span class="required">이름</span></div>
+                                        <div>
+                                            <input type="text" value="김승준">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><span class="required">휴대폰번호</span></div>
+                                        <div>
+                                            <input type="text" value="010-1234-5678">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><span class="required">이메일</span></div>
+                                        <div>
+                                            <input type="text" value="dytrix@mail.com">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><span class="required">제목</span></div>
+                                        <div>
+                                            <input type="text" placeholder="제목을 입력하세요" class="w100">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><span class="required">내용</span></div>
+                                        <div>
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="불편사항 혹은 문의사항을 남겨주시면 최대한 빠르게 확인 후 답변드리겠습니다."></textarea>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><span>사진첨부</span></div>
+                                        <div>
+                                            <div class="filebox"> <label for="ex_file">파일선택</label> <input type="file" id="ex_file"> <span>* 5M 이하의 PNG, JPG 파일만 첨부 가능 (최대 5개)</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button>취소</button>
+                                    <button class="btn_on">등록</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+		</article>
+		<footer>
+			<ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+    </div>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2" style="display: block;"></div>
+	<div class="wrap">
+		<header>
+            <div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <button class="btn_menu m_br"><img src="assets/img/btn-menu.svg" alt="모바일메뉴"></button>
+                <button class="btn_ticket m_br"><img src="assets/img/btn-ticket.svg" alt="티켓"></button>
+                <nav>
+                    <ul>
+                        <li class="on m_br"><a href="#a">홈 화면</a></li>
+                        <li><a href="#a">영화관찾기</a></li>
+                        <li><a href="#a">영화검색</a></li>
+                        <li><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                    <p class="m_copy m_br">© 2020 DTRYX.</p>
+                </nav>
+                <div class="nav_dimmed"></div>
+            </div>
+            <div class="search_layer">
+                <div class="inner">
+                    <div class="search_box">
+                        <button><img src="assets/img/btn-search.png" alt="검색"></button>
+                        <input type="text" placeholder="영화관 검색">
+                        <button class="btn_cancel">취소</button>
+                    </div>
+                    <p class="txt_result">검색결과</p>
+                    <ul class="result_list">
+                        <li><a href="#a">검색결과가 없습니다.</a></li>
+                    </ul>
+                </div>
+            </div>
+		</header>
+		<article class="main">
+			<section class="main_top">
+                <div class="swiper-container main_top_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="txt_box">
+                                <p class="cate_tit">영화제</p>
+                                <p class="tit">전주 국제 영화제</p>
+                                <p class="stit">Jeonju International Film Festival</p>
+                                <p class="period">2020.04.30 ~2020.05.09</p>
+                                <p class="txt">2000년, 부분 경쟁을 도입한 비경쟁 영화제로 출범한 전주국제영화제는 <br>
+                                국제영화제의 지형에서 독특한 위치를 점해 왔다. 전주의 모토는 동시대<br>
+                                영화 예술의 대안적 흐름과 독립,실험영화의 최전선에 놓인 작품들을<br>
+                                소개하는 것이다. 미래 영화의 주역이 될 수 있는 재능의 발굴, 창의적인<br>
+                                실험과 독립정신을 지지하며, 전 세계 영화작가들이 만나고 연대하는<br>
+                                기회를 제공한다.</p>
+                                <a href="#a" target="_blank" class="btn_link">공식 홈페이지로 이동</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="txt_box">
+                                <p class="cate_tit">영화제</p>
+                                <p class="tit">전주 국제 영화제</p>
+                                <p class="stit">Jeonju International Film Festival</p>
+                                <p class="period">2020.04.30 ~2020.05.09</p>
+                                <p class="txt">2000년, 부분 경쟁을 도입한 비경쟁 영화제로 출범한 전주국제영화제는 <br>
+                                    국제영화제의 지형에서 독특한 위치를 점해 왔다. 전주의 모토는 동시대<br>
+                                    영화 예술의 대안적 흐름과 독립,실험영화의 최전선에 놓인 작품들을<br>
+                                    소개하는 것이다. 미래 영화의 주역이 될 수 있는 재능의 발굴, 창의적인<br>
+                                    실험과 독립정신을 지지하며, 전 세계 영화작가들이 만나고 연대하는<br>
+                                    기회를 제공한다.</p>
+                                <a href="#a" target="_blank" class="btn_link">공식 홈페이지로 이동</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="txt_box">
+                                <p class="cate_tit">영화제</p>
+                                <p class="tit">전주 국제 영화제</p>
+                                <p class="stit">Jeonju International Film Festival</p>
+                                <p class="period">2020.04.30 ~2020.05.09</p>
+                                <p class="txt">2000년, 부분 경쟁을 도입한 비경쟁 영화제로 출범한 전주국제영화제는 <br>
+                                    국제영화제의 지형에서 독특한 위치를 점해 왔다. 전주의 모토는 동시대<br>
+                                    영화 예술의 대안적 흐름과 독립,실험영화의 최전선에 놓인 작품들을<br>
+                                    소개하는 것이다. 미래 영화의 주역이 될 수 있는 재능의 발굴, 창의적인<br>
+                                    실험과 독립정신을 지지하며, 전 세계 영화작가들이 만나고 연대하는<br>
+                                    기회를 제공한다.</p>
+                                <a href="#a" target="_blank" class="btn_link">공식 홈페이지로 이동</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="txt_box">
+                                <p class="cate_tit">영화제</p>
+                                <p class="tit">전주 국제 영화제</p>
+                                <p class="stit">Jeonju International Film Festival</p>
+                                <p class="period">2020.04.30 ~2020.05.09</p>
+                                <p class="txt">2000년, 부분 경쟁을 도입한 비경쟁 영화제로 출범한 전주국제영화제는 <br>
+                                    국제영화제의 지형에서 독특한 위치를 점해 왔다. 전주의 모토는 동시대<br>
+                                    영화 예술의 대안적 흐름과 독립,실험영화의 최전선에 놓인 작품들을<br>
+                                    소개하는 것이다. 미래 영화의 주역이 될 수 있는 재능의 발굴, 창의적인<br>
+                                    실험과 독립정신을 지지하며, 전 세계 영화작가들이 만나고 연대하는<br>
+                                    기회를 제공한다.</p>
+                                <a href="#a" target="_blank" class="btn_link">공식 홈페이지로 이동</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="cont cont1">
+                <h2>금방 나온 따끈따끈한 영화</h2>
+                <div class="swiper-container movie_list_slide1">
+                    <ul class="swiper-wrapper movie_list">
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb01.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">너를만난여름</span> <span class="view_age a12">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb02.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">남산의 부장들</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb03.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">미스터 주: 사라진vip</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb04.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">해치지않아</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb05.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">스파이 지니어스</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb06.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">닥터 두리틀</span><span class="view_age a19">청불</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <a href="#a" class="btn_all_view">전체보기</a>
+            </section>
+            <section class="cont cont2">
+                <h2>전문가들이 직접 추천하는 영화</h2>
+                <div class="swiper-container movie_list_slide2">
+                    <ul class="swiper-wrapper movie_list">
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb01.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">너를만난여름</span> <span class="view_age a12">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb02.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">남산의 부장들</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb03.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">미스터 주: 사라진vip</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb04.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">해치지않아</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb05.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">스파이 지니어스</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb06.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">닥터 두리틀</span><span class="view_age a19">청불</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <a href="#a" class="btn_all_view">전체보기</a>
+            </section>
+            <section class="cont cont3">
+                <h2>영화제에서 상 받은 영화</h2>
+                <div class="swiper-container movie_list_slide3">
+                    <ul class="swiper-wrapper movie_list">
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb01.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">너를만난여름</span> <span class="view_age a12">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb02.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">남산의 부장들</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb03.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">미스터 주: 사라진vip</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb04.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">해치지않아</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb05.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">스파이 지니어스</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb06.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">닥터 두리틀</span><span class="view_age a19">청불</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <a href="#a" class="btn_all_view">전체보기</a>
+            </section>
+            <aside><a href="#a"><img src="assets/img/banner-sample-01.png" alt=""></a></aside>
+            <section class="cont cont4">
+                <h2>평론가와 관람객 평점이 모두 좋은 영화</h2>
+                <div class="swiper-container movie_list_slide4">
+                    <ul class="swiper-wrapper movie_list">
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb01.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">너를만난여름</span> <span class="view_age a12">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb02.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">남산의 부장들</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb03.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">미스터 주: 사라진vip</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb04.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">해치지않아</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb05.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">스파이 지니어스</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb06.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">닥터 두리틀</span><span class="view_age a19">청불</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <a href="#a" class="btn_all_view">전체보기</a>
+            </section>
+            <section class="cont cont5">
+                <h2>다큐멘터리의 진정성을 좋아한다면</h2>
+                <div class="swiper-container movie_list_slide5">
+                    <ul class="swiper-wrapper movie_list">
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb01.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">너를만난여름</span> <span class="view_age a12">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb02.jpg" alt="">
+                                <span class="cate type1">무대인사</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">남산의 부장들</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb03.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">미스터 주: 사라진vip</span><span class="view_age a15">12</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb04.jpg" alt="">
+                                <span class="cate type2">기획전</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">해치지않아</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb05.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">스파이 지니어스</span><span class="view_age all">전체</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="img_box">
+                                <img src="assets/img/@thumb06.jpg" alt="">
+                                <span class="cate type3">영화제</span>
+                            </div>
+                            <p class="movie_tit"><span class="tit">닥터 두리틀</span><span class="view_age a19">청불</span></p>
+                            <p class="movie_point">일반 8.8 / 평론가 7.1</p>
+                            <button class="btn_ticketing">예매</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <a href="#a" class="btn_all_view">전체보기</a>
+            </section>
+            <section class="cont cont6">
+                <h2>현재 진행되고 있는 영화관 이벤트</h2>
+                <ul class="board_list">
+                    <li>
+                        <span class="cine">인디스페이스</span>
+                        <a href="#a">겨울 영화제 [20.01.31~20.02.15]</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                    <li>
+                        <span class="cine">대한극장</span>
+                        <a href="#a">2월 예술영화 프로그램</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                    <li>
+                        <span class="cine">아트하우스 모모</span>
+                        <a href="#a">기생충 감독 / 배우 무대인사 및 특별상영회</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                    <li>
+                        <span class="cine">아리랑시네센터</span>
+                        <a href="#a">[경계선] 감독 특별 초청 이벤트 개최</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                    <li>
+                        <span class="cine">인디스페이스</span>
+                        <a href="#a">겨울 영화제 [20.01.31~20.02.15]</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                </ul>
+                <a href="#a" class="btn_all_view">전체보기</a>
+            </section>
+            <section class="cont cont7">
+                <h2>기획전이 있는 시네마</h2>
+                <ul class="board_list">
+                    <li>
+                        <span class="cine">인디스페이스</span>
+                        <a href="#a">2020 씨네큐브 아카데미 특별전</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                    <li>
+                        <span class="cine">대한극장</span>
+                        <a href="#a">2020 예술영화 프리미어 페스티벌</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                    <li>
+                        <span class="cine">아트하우스 모모</span>
+                        <a href="#a">책과 영화의 만남 &lt;다시 바라보다&gt; 굿즈 이벤트 안내</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                    <li>
+                        <span class="cine">아리랑시네센터</span>
+                        <a href="#a">[기획전] 대한극장 X 씨네Q</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                    <li>
+                        <span class="cine">인디스페이스</span>
+                        <a href="#a">2020 씨네큐브 아카데미 특별전</a>
+                        <span class="date">19.12.31</span>
+                    </li>
+                </ul>
+                <a href="#a" class="btn_all_view">전체보기</a>
+            </section>
+		</article>
+		<footer>
+			<ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+    </div>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script>
+        var swiper = new Swiper('.main_top_swiper', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+
+        var mv1_swiper = new Swiper('.movie_list_slide1', {
+            slidesPerView: 6,
+            spaceBetween: 37,
+            loop: true,
+            navigation: {
+                nextEl: '.cont1 .swiper-button-next',
+                prevEl: '.cont1 .swiper-button-prev',
+            },
+        });
+        var mv2_swiper = new Swiper('.movie_list_slide2', {
+            slidesPerView: 6,
+            spaceBetween: 37,
+            loop: true,
+            navigation: {
+                nextEl: '.cont2 .swiper-button-next',
+                prevEl: '.cont2 .swiper-button-prev',
+            },
+        });
+        var mv3_swiper = new Swiper('.movie_list_slide3', {
+            slidesPerView: 6,
+            spaceBetween: 37,
+            loop: true,
+            navigation: {
+                nextEl: '.cont3 .swiper-button-next',
+                prevEl: '.cont3 .swiper-button-prev',
+            },
+        });
+        var mv4_swiper = new Swiper('.movie_list_slide4', {
+            slidesPerView: 6,
+            spaceBetween: 37,
+            loop: true,
+            navigation: {
+                nextEl: '.cont4 .swiper-button-next',
+                prevEl: '.cont4 .swiper-button-prev',
+            },
+        });
+        var mv5_swiper = new Swiper('.movie_list_slide5', {
+            slidesPerView: 6,
+            spaceBetween: 37,
+            loop: true,
+            navigation: {
+                nextEl: '.cont5 .swiper-button-next',
+                prevEl: '.cont5 .swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

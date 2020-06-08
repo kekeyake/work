@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="assets/css/font.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2"></div>
+	<div class="wrap">
+        <header>
+            <div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <button class="btn_menu m_br"><img src="assets/img/btn-menu.svg" alt="모바일메뉴"></button>
+                <button class="btn_ticket m_br"><img src="assets/img/btn-ticket.svg" alt="티켓"></button>
+                <nav>
+                    <ul>
+                        <li class="on m_br"><a href="#a">홈 화면</a></li>
+                        <li><a href="#a">영화관찾기</a></li>
+                        <li><a href="#a">영화검색</a></li>
+                        <li><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                    <p class="m_copy m_br">© 2020 DTRYX.</p>
+                </nav>
+                <div class="nav_dimmed"></div>
+            </div>
+        </header>
+		<article class="detail_main">
+			<section class="detail_top" style="background:url(https://movie-phinf.pstatic.net/20200407_105/1586221588109pHOpS_JPEG/movie_image.jpg) no-repeat 50% 50% / cover;">
+                <div class="inner">
+                    <div class="movie_info">
+                        <div class="img_box">
+                            <img src="https://movie-phinf.pstatic.net/20200407_105/1586221588109pHOpS_JPEG/movie_image.jpg" alt="">
+                        </div>
+                        <div class="txt_box">
+                            <p class="movie_name"><strong>원더</strong> <span class="view_age a12 m_br">12</span></p>
+                            <p class="movie_name_e">Wonder</p>
+                            <ul class="info_list">
+                                <li>전체관람가</li>
+                                <li>2017년 개봉</li>
+                                <li>드라마/가족</li>
+                                <li>2시간 35분</li>
+                            </ul>
+                            <div class="movie_point">
+                                <div class="join_point">
+                                    <img src="assets/img/ic-star-small-on.png" alt="">
+                                    <span>4.2 / 5</span>
+                                </div>
+                                <div class="participation">124,814 명 참여</div>
+                            </div>
+                            <div class="input_point" style="display:inline-flex;">
+                                <div>
+                                    <input type="checkbox" id="star1">
+                                    <label for="star1"></label>
+                                    <input type="checkbox" id="star2">
+                                    <label for="star2"></label>
+                                    <input type="checkbox" id="star3">
+                                    <label for="star3"></label>
+                                    <input type="checkbox" id="star4">
+                                    <label for="star4"></label>
+                                    <input type="checkbox" id="star5">
+                                    <label for="star5"></label>
+                                    <span>3 / 5</span>
+                                </div>
+                                <button>확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <a href="#a" class="btn_ticketing">예매하기</a>
+                        <a href="#a" class="btn_review">예고편보기</a>
+                    </div>
+                </div>
+            </section>
+            <section class="detail_cont">
+                <div class="inner">
+                    <div class="scroll_x">
+                        <ul class="tab_list">
+                            <li class="active"><a href="#a">주요정보</a></li>
+                            <li><a href="#a">배우/제작진</a></li>
+                            <li><a href="#a">상영 영화관</a></li>
+                            <li><a href="#a">별점/감상평</a></li>
+                            <li><a href="#a">예고편/스틸컷</a></li>
+                            <li><a href="#a">관련기사/블로그</a></li>
+                        </ul>
+                    </div>
+                    <div class="cont_box">
+                        <h2>배우</h2>
+                        <ul class="movie_info_list">
+                            <li>
+                                <strong>감독</strong>
+                                <div>
+                                    <a href="#a">스티븐 크보스키</a>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>배우</strong>
+                                <div>
+                                    <a href="#a">제이콥 트렘블리이</a>(어기 풀먼 역),
+                                    <a href="#a">줄리아 로버츠</a>(이자벨 풀먼 역),
+                                    <a href="#a">오웬 월슨</a>(네이트 풀먼 역),
+                                    <a href="#a">이자벨라 비도빅</a>(비아 풀먼 역),
+                                    <a href="#a" class="btn_more">더보기</a>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>배급사</strong>
+                                <div>CGV아트하우스 CGV ARTHOUSE</div>
+                            </li>
+                            <li>
+                                <strong>수입사</strong>
+                                <div>CGV아트하우스 CGV ARTHOUSE / 그린나래미디어(주) GREEN NARAE MEDIA</div>
+                            </li>
+                            <li>
+                                <strong>공동제공</strong>
+                                <div>(주)팝엔터테인먼트 Pop Entertainment</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cont_box">
+                        <h2>줄거리</h2>
+                        <div class="movie_plot">
+                            "넌 못생기지 않았어, 네게 관심있는 사람은 알게 될 거야"<br>
+                            헬멧 속에 숨었던 아이 '어기', 세상 밖으로 나오다! <br><br>
+                        
+                            누구보다 위트 있고 호기심 많은 매력 부자 '어기'(제이콥 트렘블레이).<br>
+                            하지만 남들과 다른 외모로 태어난 '어기'는 모두가 좋아하는 크리스마스 대신 얼굴을 감출 수 있는 할로윈을 더 좋아한다.<br>
+                            10살이 된 아들에게 더 큰 세상을 보여주고 싶었던 엄마 '이사벨'(줄리아 로버츠)과 아빠 '네이트'(오웬 윌슨)는<br>
+                            '어기'를 학교에 보낼 준비를 하고, 동생에게 모든 것을 양보해왔지만<br>
+                            누구보다 그를 사랑하는 '비아'도 '어기'의 첫걸음을 응원해준다.<br><br>
+                        
+                            그렇게 가족이 세상의 전부였던 '어기'는 처음으로 헬멧을 벗고 낯선 세상에 용감하게 첫발을 내딛지만<br>
+                            첫날부터 '남다른 외모'로 화제의 주인공이 되고, 사람들의 시선에 큰 상처를 받는다.<br>
+                            그러나 '어기'는 27번의 성형(?)수슬을 견뎌낸 긍정적인 성격으로 다시 한번 용기를 내고,<br>
+                            주변 사람들도 하나둘 변하기 시작하는데...
+                        </div>
+                    </div>
+                    <div class="flex_box">
+                        <div class="cont_box">
+                            <h2>누적관객수</h2>
+                            <p class="t1">266,973명(03.11 기준)</p>
+                            <div class="cumulative_txt">
+                                <p>개봉 15일차</p>
+                                <p>999,999,999명</p>
+                            </div>
+                            <img src="assets/img/@graph.png" alt="" class="cumulative_img">
+                            <ul class="cumulative_list">
+                                <li>08.19</li>
+                                <li>08.20</li>
+                                <li>08.21</li>
+                                <li>08.22</li>
+                                <li>08.23</li>
+                            </ul>
+                        </div>
+                        <div class="cont_box">
+                            <h2>연령별 예매율</h2>
+                            <p class="t1">40대 관객 비율이 가장 높습니다.</p>
+                            <ul class="age_list">
+                                <li>
+                                    <div class="chart_line">
+                                        <div style="height:37px"></div>
+                                        <span>1.6</span>
+                                    </div>
+                                    <span>10대</span>
+                                </li>
+                                <li>
+                                    <div class="chart_line">
+                                        <div style="height:96px"></div>
+                                        <span>28.2</span>
+                                    </div>
+                                    <span>20대</span>
+                                </li>
+                                <li>
+                                    <div class="chart_line">
+                                        <div style="height:112px"></div>
+                                        <span>31.0</span>
+                                    </div>
+                                    <span>30대</span>
+                                </li>
+                                <li class="high_age">
+                                    <div class="chart_line">
+                                        <div style="height:118px"></div>
+                                        <span>31.1</span>
+                                    </div>
+                                    <span>40대</span>
+                                </li>
+                                <li class="high_years">
+                                    <div class="chart_line">
+                                        <div style="height:54px"></div>
+                                        <span>9</span>
+                                    </div>
+                                    <span>50대</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cont_box">
+                            <h2>성별 예매율</h2>
+                            <p class="t1">여성 관객 비율이 높습니다.</p>
+                            <ul class="gender_list">
+                                <li>
+                                    <div>
+                                        <span class="mask" style="height: 72%;"></span><!-- 남여 비율 반대로 -->
+                                    </div>
+                                    <span>남 28%</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="mask" style="height: 28%;"></span><!-- 남여 비율 반대로 -->
+                                    </div>
+                                    <span>여 72%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <aside><a href="#a"><img src="assets/img/banner-sample-01.png" alt=""></a></aside>
+            </section>
+		</article>
+		<footer>
+			<ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+    </div>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+
+</html>

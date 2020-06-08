@@ -1,0 +1,134 @@
+@charset "utf-8";
+.home_top {padding:0 24px;}
+.home_top .tit_box {display: flex;justify-content: center;align-items: center;position: relative;}
+.home_top .tit_box h1 {font-size: 20px;color:#242424;font-weight: bold;}
+.home_top .tit_box a {position: absolute;left:0;top:0;}
+.home_top .movie_category {margin-top: 35px;font-size: 0;}
+.home_top .movie_category .inner {overflow-x: scroll;display:flex;width:100%;flex-wrap:nowrap;flex-grow: 1;padding-bottom: 4px;}
+.home_top .movie_category a {position: relative; color:#999;margin-right: 24px;font-weight: normal;cursor: pointer;font-size: 14px;white-space:nowrap;}
+.home_top .movie_category a.on {font-weight: bold;color:#242424;}
+.home_top .movie_category a.on::after {display: block;content: '';width:100%;height:2px;background-color: #242424;border-radius: 1px;position: absolute;left:0;bottom:-4px;}
+.movie_list {margin-top: 10%;overflow: visible;padding:0 6% 30px;background-color: #fff;}
+.movie_list::after {content: '';display:block;width:100%;height:75px;background-color: #f7f7f7;position: absolute;left:0;top:0;z-index: 0;}
+.movie_list li {width:38% !important;padding-top:50%;border-radius: 10px;overflow: hidden;box-shadow: 8px 20px 20px 0 rgba(0, 0, 0, 0.1);text-align: center;margin:0 2% !important;background:#e2e2e2 url(../img/common/img-default.svg) no-repeat 50% 50% / 25px 32px;position: relative;}
+.movie_list li img {width:100%;object-fit: cover;position: absolute;left:0;top:0;}
+.movie_list .swiper-slide {transform: scale(1.0);}
+.movie_list .select {transform: scale(1.15);margin: 0 5% !important;}
+.movie_list li.disabled.select {transform: scale(1.0);margin:0 2% !important;}
+.movie_list li.disabled img {opacity: 0.5;}
+.movie_list li:first-child {margin-left: 0 !important;}
+.movie_list li:first-child.select {margin-left: 10px !important;}
+.movie_list li:last-child {margin-right: 0 !important;}
+.movie_list .movie_back {position: absolute;left:0;top:45%;transform: translateY(-50%);z-index: 10;display: none;}
+.ticketing_box {padding:0 0 16px 0;background-color: #fff;}
+.ticketing_box .movie_top {text-align: center;}
+.ticketing_box .movie_top .movie_tit {position: relative; position: relative; font-size: 20px;font-weight: bold;display: inline-block;word-break: break-all;text-align: center;width:80%;}
+.ticketing_box .movie_top .movie_tit a {color:#242424;padding-right:24px;display: inline-block;background: url(../img/common/ic-arrow-right.svg) no-repeat 100% 50% / 24px 24px;}
+.ticketing_box .movie_top .movie_info {margin: 8px auto 0;font-size: 0;width:80%;}
+.ticketing_box .movie_top .movie_info span {color:#999;display: inline-block;font-size: 14px;}
+.ticketing_box .movie_top .movie_info span:first-child:before {display: none;}
+.ticketing_box .movie_top .movie_info span:before {display: inline-block;content: '';width:1px;height:16px;background-color: #e2e2e2;margin:-2px 8px;}
+.movie_calendar {margin-top: 16px;padding:0 24px;}
+.movie_calendar li {text-align: center;width:32px;margin-right:12px;}
+.movie_calendar li span {display: block;font-size: 13px;}
+.movie_calendar li.on span,
+.movie_calendar li:first-child span {font-weight: bold;}
+.movie_calendar li.on .day {border-radius: 50px;color:#fff;width:32px;height:32px;background-color: #242424;line-height: 31px;font-weight: normal;margin:11px auto 0;}
+.movie_calendar li .day {line-height: 31px;margin-top: 11px;font-size: 18px;}
+.movie_calendar li.holyday span {color:#f8852e;}
+.movie_calendar li.disabled span {opacity: 0.4;}
+.cinema_section {margin-top:8px;padding:24px 24px 100px;background-color: #fff;}
+.cinema_tab {position: relative;padding-top: 4px;}
+.cinema_tab > span {width:70%;display: inline-block;font-size: 0;vertical-align: top;}
+.cinema_tab > span a {position: relative;margin-right: 10%;max-width:45%;display: inline-block;font-size: 14px;vertical-align: top;word-break: keep-all;}
+.cinema_tab > span a:last-child {margin-right: 0;}
+.cinema_tab > span a ,
+.cinema_tab > span a:hover,
+.cinema_tab > span a:visited {color:#999;font-weight: normal;}
+.cinema_tab > span a.on {color:#242424;font-weight: bold;}
+.cinema_tab > span a.on::after {display: block;content: '';width:100%;height:2px;background-color: #242424; position: absolute;left:0;bottom: -4px;}
+.cinema_tab .local_btn {padding:3px 8px 3px 16px;border-radius: 16px;border: solid 1px #e2e2e2;background-color: #fff;position: absolute;right:0;top:0;box-sizing: border-box;}
+.cinema_tab .local_btn span {height:24px;padding:0 24px 0 0;font-size: 13px;font-weight: normal;background: url(../img/common/ic-arrow-right.svg) no-repeat 100% 49%;object-fit: contain;color:#242424;line-height: 24px;}
+.cinema_select {text-align: center;margin-top: 22px;}
+.cinema_select .txt {font-size: 14px;color:#999;margin-bottom: 20px;}
+.cinema_select .cinema_seach_btn {padding:7px 18px 8px 28px;border-radius: 20px;border: solid 1px #e2e2e2;background-color: #fff;box-sizing: border-box;}
+.cinema_select .cinema_seach_btn span {height:24px;padding:0 24px 0 0;font-size: 13px;font-weight: normal;background: url(../img/common/ic-arrow-right.svg) no-repeat 100% 49%;object-fit: contain;color:#242424;line-height: 24px;}
+.cinema_list {margin-top: 24px;}
+.cinema_list .cinema_sel {display: flex;align-items: center;margin-bottom: 16px; padding:8px; border-radius: 4px; object-fit: contain;background:#f7f7f7 url(../img/common/ic-dropdown-down.svg) no-repeat 95% 50%;}
+.cinema_list .cinema_sel.open {background:#f7f7f7 url(../img/common/ic-dropdown-up.svg) no-repeat 95% 50%;}
+.cinema_list .cinema_sel .favorite_btn {display: inline-block; width: 24px;  height: 24px;margin-right: 8px; object-fit: contain;background: url(../img/common/btn-favorite-default.svg) no-repeat 50% 50%;}
+.cinema_list .cinema_sel .favorite_btn.on {background: url(../img/common/btn-favorite-sel.svg) no-repeat 50% 50%;}
+.cinema_list .cinema_sel span {font-weight: bold;vertical-align: top;display: inline-block;width:100%;cursor: pointer;}
+.cinema_list .cinema_sel.disabled * {cursor: initial;}
+.cinema_list .cinema_sel.disabled .favorite_btn {opacity: 0.5;}
+.cinema_list .cinema_sel.disabled span {opacity: 0.5;}
+.cinema_list .cinema_info {display: none;}
+.cinema_list .cinema_info.open {display:block;}
+.cinema_list .cinema_info .no_data {padding:40px 0 24px; text-align: center;color:#999;background: url(../img/common/ic-theaters.svg) no-repeat 50% 0;}
+.cinema_list .cinema_screen:nth-child(n+2) {margin-top:20px;}
+.cinema_list .cinema_info_box .tit {padding-left:8px; }
+.cinema_list .cinema_info_box .tit span {color:#999;margin-left: 8px;}
+.cinema_list .cinema_time {margin-top: 16px;overflow-x: scroll;position: relative;width:108%;}
+.cinema_list .cinema_scroll {display: flex;flex-wrap: nowrap;justify-content: flex-start;}
+.cinema_list .cinema_time_box {width:112px;}
+.cinema_list .cinema_time_box .inner {width:110px;padding:6px 7px 7px 8px;border-radius: 4px;border: solid 1px #e2e2e2;display: inline-block;margin-right: 8px;box-sizing: border-box;}
+.cinema_list .cinema_time_box .time {font-size: 12px;color:#999;}
+.cinema_list .cinema_time_box .seat {font-size: 12px;}
+.cinema_list .cinema_time_box b {font-weight: bold;}
+.cinema_list .cinema_time_box i {font-style: normal;margin-left: 1px;}
+.cinema_list .cinema_time_box .time i {color:#999;}
+.cinema_list .cinema_time_box .time b {color:#242424;font-size: 16px;}
+.cinema_list .cinema_time_box .seat b {color:#f8852e;}
+.cinema_list .cinema_time_box span {border-radius: 4px; background-color: #999;padding:0 2px 1px;color:#fff;font-size: 9px;margin-left: 2px;}
+.cinema_list .cinema_txt {width:101px;padding:0 5px;margin:4px 0; word-break: keep-all; text-align: center;font-size: 12px;color:#666;}
+.cinema_list .cinema_detail {text-align: center;margin:20px 0;}
+.cinema_list .cinema_detail a {font-size: 13px;color:#242424;background: url(../img/common/ic-arrow-right.svg) no-repeat 100% 49%;padding:0 25px 0 0;font-weight: normal;}
+
+.cinema_list.one_hall {margin-top: 0;}
+.cinema_list.one_hall .cinema_info {display: block;}
+.cinema_list.one_hall .cinema_info .no_data {padding:40px 0 24px; text-align: center;color:#999;background: url(../img/common/ic-theaters.svg) no-repeat 50% 0;}
+.cinema_list.one_hall .cinema_screen:nth-child(n+2) {margin-top:20px;}
+.cinema_list.one_hall .cinema_info_box .tit {padding-left:8px; }
+.cinema_list.one_hall .cinema_info_box .tit span {color:#999;margin-left: 8px;}
+.cinema_list.one_hall .cinema_time {margin-top: 16px;overflow-x: scroll;position: relative;width:108%;}
+.cinema_list.one_hall .cinema_scroll {display: flex;flex-wrap: nowrap;}
+.cinema_list.one_hall .cinema_time_box {width:110px;}
+.cinema_list.one_hall .cinema_time_box .inner {width:101px;padding:8px 5px;border-radius: 4px;border: solid 1px #e2e2e2;display: inline-block;margin-right: 8px;box-sizing: border-box;}
+.cinema_list.one_hall .cinema_time_box .time {font-size: 13px;}
+.cinema_list.one_hall .cinema_time_box .seat {font-size: 12px;}
+.cinema_list.one_hall .cinema_time_box b {font-weight: bold;}
+.cinema_list.one_hall .cinema_time_box i {font-style: normal;font-size: 12px;}
+.cinema_list.one_hall .cinema_time_box .time i {color:#999;}
+.cinema_list.one_hall .cinema_time_box .seat b {color:#f8852e;}
+.cinema_list.one_hall .cinema_time_box span {border-radius: 4px; background-color: #999;padding:0 2px 1px;color:#fff;font-size: 9px;}
+.cinema_list.one_hall .cinema_txt {margin:4px 0; word-break: keep-all; text-align: center;font-size: 12px;color:#666;}
+.cinema_list.one_hall .cinema_detail {text-align: center;margin:20px 0;}
+.cinema_list.one_hall .cinema_detail a {font-size: 13px;color:#242424;background: url(../img/common/ic-arrow-right.svg) no-repeat 100% 49%;padding:0 25px 0 0;font-weight: normal;}
+
+.layer_ticket {position:fixed;left:0;top:0;width:100vw;height:100vh;background:rgba(0, 0, 0, 0.6);z-index: 10;display: none;}
+.layer_ticket .inner {width:90%;position: absolute;left:50%;top:44px;transform: translateX(-50%);padding-top: 40px;}
+.layer_ticket .inner ul {height:calc(100vh - 110px);overflow-y: scroll;}
+.layer_ticket .my_movie_list {position: relative;background-color: #fff;border-radius: 10px;overflow: hidden;display: flex;align-items: center;margin-bottom: 16px;}
+.layer_ticket .my_movie_list:last-child {margin-bottom: 0;}
+.layer_ticket .my_movie_list .movie_img {width:30%;}
+.layer_ticket .my_movie_list .movie_img img {width: 100%;}
+.layer_ticket .my_movie_list .movie_info {width:70%;padding:10px 16px;}
+.layer_ticket .my_movie_list .movie_info .tit {font-size: 14px;font-weight: bold;color:#242424;margin-bottom: 2px;width:100%;word-break: break-all;}
+.layer_ticket .my_movie_list .movie_info .stit {font-size: 11px;color:#999;margin-bottom: 7px;width:100%;word-break: break-all;}
+.layer_ticket .my_movie_list .movie_info .date {font-size: 13px;color:#242424;margin-bottom: 4px;}
+.layer_ticket .my_movie_list .movie_info .date span:first-child {margin-right: 5%;}
+.layer_ticket .my_movie_list .movie_info .cinema {font-size: 13px;color:#999;line-height: 16px;word-break: keep-all;}
+.layer_ticket .my_movie_list .movie_info .cinema span {display: inline-block;}
+.layer_ticket .my_movie_list .movie_info .cinema span:nth-child(2) {border-right: 1px solid #e2e2e2;border-left: 1px solid #e2e2e2;padding:0 8px;margin:0 8px;}
+.layer_ticket .my_movie_list .movie_info .pay {font-size: 16px;color:#242424;margin: 21px 0 4px;}
+.layer_ticket .my_movie_list .movie_info .payment {font-size: 13px;}
+.layer_ticket .my_movie_list .movie_info .payment.ok {color:#2276ee}
+.layer_ticket .my_movie_list .movie_info .payment.cancel {color:#999;}
+.layer_ticket .inner .btn_closed {position: absolute;top:0;right:0;}
+
+.layer_full {position: fixed; padding:16px 24px 56px;background-color: #fff;overflow-y: auto;overflow-x: hidden;}
+.layer_full.local_cinema .tit {font-size: 20px;color:#242424;font-weight: bold;margin-bottom: 32px;}
+.layer_full.local_cinema li { padding:18px 8px 19px; border-bottom: 1px solid #e2e2e2;background: url(../img/common/ic-arrow-right.svg) no-repeat 100% 50% / 24px 24px;}
+.layer_full.local_cinema li a {width:95%;display: flex;justify-content:space-between ;align-items: center;font-size: 13px;color:#242424;font-weight: normal;}
+.layer_full .layer_closed {position: absolute;top:20px;right:24px;}
+

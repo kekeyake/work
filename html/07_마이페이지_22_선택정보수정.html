@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#a">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <div class="bg_wrap"></div>
+    <div class="bg_wrap2"></div>
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <h1><a href="#a"><img src="assets/img/logo.svg" alt="logo"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#a" class="btn_find_nav">영화관찾기</a></li>
+                        <li><a href="#a" class="btn_search_nav">영화검색</a></li>
+                        <li class="on"><a href="#a">마이페이지</a></li>
+                        <li><a href="#a">로그인</a></li>
+                        <li><a href="#a">빠른예매</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article class="detail_sub">
+            <section class="detail_cont">
+                <div class="inner">
+                    <div class="mypage_wrap">
+                        <div class="side_nav">
+                            <h2>My Page</h2>
+                            <ul>
+                                <li><a href="#a">예매/구매내역</a></li>
+                                <li><a href="#a">영화 관람권</a></li>
+                                <li><a href="#a">멤버쉽포인트</a></li>
+                                <li><a href="#a">내가 본 영화 <span>1</span></a></li>
+                                <li><a href="#a">내가 쓴 감상평</a></li>
+                                <li><a href="#a">1:1 문의</a></li>
+                                <li><a href="#a">회원정보 수정</a></li>
+                                <li class="on"><a href="#a">선택정보 수정</a></li>
+                            </ul>
+                        </div>
+                        <div class="mypage_cont">
+                            <h2>선택정보 수정</h2>
+                            <div class="modify_optional">
+                                <h3>마케팅 활용을 위한 개인정보 수집 이용 안내</h3>
+                                <div class="agree_box">
+                                    <div class="inner_box">
+                                        [수집 목적] <br>
+                                        고객 맞춤형 상품 및 서비스 추천. 당사 신규 상품/서비스 안내 및 권유. 사은/할인 행사 등 각종 이벤트 정보 등의 안내 및 권유 <br><br>
+                                        
+                                        [수집 항목] <br>
+                                        이메일, 휴대폰번호, 주소, 생년월일, 선호극장, 문자/이메일/앱푸쉬 정보 수신동의여부, 서비스 이용기록, 포인트 적립 및 사용 정보, 접속로그 <br><br>
+                                        
+                                        [보유 및 이용 기간] <br>
+                                        회원 탈퇴 시 혹은 이용 목적 달성 시까지
+                                    </div>
+                                    <div class="check_wrap">
+                                        <input type="radio" name="c1" id="c11">
+                                        <label for="c11">미동의</label>
+                                        <input type="radio" name="c1" id="c22">
+                                        <label for="c22">동의</label>
+                                    </div>
+                                </div>
+
+                                <h3>마케팅정보 수신동의</h3>
+                                <div class="agree_box">
+                                    <div class="inner_box">
+                                        거래정보와 관련된 내용(예매완료/취소)과 소멸포인트 안내는 수신동의 여부와 관계없이 SMS, PUSH 알림, 이메일로 발송됩니다. <br>
+                                        이 외 타 정보는 수신동의를 하셔야만 받으실 있습니다. (2014.05.16 기준)
+                                    </div>
+                                    <div class="radio_wrap">
+                                        <div>
+                                            <span>이메일</span>
+                                            <input type="radio" name="email" id="e1">
+                                            <label for="e1">수신동의</label>
+                                            <input type="radio"" name="email" id="e2">
+                                            <label for="e2">수신거부</label>
+                                        </div>
+                                        <div>
+                                            <span>SMS</span>
+                                            <input type="radio" name="sms" id="s1">
+                                            <label for="s1">수신동의</label>
+                                            <input type="radio" name="sms" id="s2">
+                                            <label for="s2">수신거부</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3>부가정보</h3>
+                                <div class="ect_info">
+                                    <ul>
+                                        <li>
+                                            <div>즐겨찾는 영화관</div>
+                                            <div>
+                                                <p>인디스페이스, 아트하우스 모모, 씨네큐브</p>
+                                                <button>수정</button>
+                                            </div>
+                                            
+                                        </li>
+                                        <li>
+                                            <div>선호하는 장르</div>
+                                            <div>
+                                                <select name="" id="">
+                                                    <option value="">선호장르 선택</option>
+                                                </select>
+                                                <select name="" id="">
+                                                    <option value="">선호장르 선택</option>
+                                                </select>
+                                                <select name="" id="">
+                                                    <option value="">선호장르 선택</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>선호하는 시간</div>
+                                            <div>
+                                                <ul>
+                                                    <li>
+                                                        <input type="radio" name="time" id="t1">
+                                                        <label for="t1">10시 이전</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="time" id="t2">
+                                                        <label for="t2">10시~13시</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="time" id="t3">
+                                                        <label for="t3">13시~16시</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="time" id="t4">
+                                                        <label for="t4">16시~18시</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="time" id="t5">
+                                                        <label for="t5">18시~21시</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="time" id="t6">
+                                                        <label for="t6">21시 이후</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="btn_box">
+                                <button class="btn_on">변경</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <ul class="link_list">
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">이용약관</a></li>
+                <li><a href="#a">개인정보취급방침</a></li>
+            </ul>
+            <div class="address_box">
+                <p>Dtryx Inc.</p>
+                <p>701, Pangyo Tower, 192-16, Pangyoyok-ro, Bundang-gu, Seongnam-si</p>
+                <p>contact@dtryx.com</p>
+                <p>031.8017.8332</p>
+            </div>
+            <p class="copyright">© 2020 DTRYX.</p>
+        </footer>
+        <a href="javascript:void(0);" id="return-to-top"><img src="assets/img/btn-top.svg" alt=""></a>
+    </div>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.js"></script>
+    <script src="assets/js/ui.js"></script>
+</body>
+
+</html>
