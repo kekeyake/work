@@ -1485,7 +1485,8 @@ aside {text-align: center;width:1024px;margin:80px auto 0;}
     .detail_sub .mypage_cont .main_point_box .point_box ol li {margin-bottom: 2px;}
     .detail_sub .mypage_cont .booking_history {padding:16px;    border-bottom: 8px solid #f4f4f4;}
     .detail_sub .mypage_cont .booking_history h3 {font-size: 16px;color:#222;font-weight: 700;margin-bottom: 24px;}
-    .detail_sub .mypage_cont .history_list {margin-bottom: 0;}
+    .detail_sub .mypage_cont .history_list {margin-bottom: 0;margin-top: 32px;}
+    .detail_sub .mypage_cont .history_list:first-of-type {margin-top: 0;}
     .detail_sub .mypage_cont .history_list .img_box {width:25%;height:auto;margin-right: 5%;}
     .detail_sub .mypage_cont .history_list .img_box img {width:100%;}
     .detail_sub .mypage_cont .history_list .history_info {width:70%;height:auto;padding-top: 0;}
@@ -1495,10 +1496,10 @@ aside {text-align: center;width:1024px;margin:80px auto 0;}
     .detail_sub .mypage_cont .history_list .btn_box {display: flex;flex-direction: row;width:100%;font-size: 14px;color:#333;margin-top: 15px;float:left;flex-wrap: wrap;}
     .detail_sub .mypage_cont .history_list .btn_box li {width:49%;margin-right: 2%;margin-bottom: 2%;}
     .detail_sub .mypage_cont .history_list .btn_box li:nth-child(even) {margin-right: 0;}
-    .detail_sub .mypage_cont .history_list .btn_box a {width:100%;height:32px;border: 1px solid #e1e1e1;display: flex;align-items: center;justify-content: center;margin-left: 0;}
+    .detail_sub .mypage_cont .history_list .btn_box a {width:100%;height:32px;border: 1px solid #e1e1e1;display: flex;align-items: center;justify-content: center;margin-left: 0;box-sizing: border-box;}
     .detail_sub .mypage_cont .tbl_list {margin-top: 16px;padding:0 16px;}
     .detail_sub .mypage_cont .tbl_list h3 {font-size: 14px;color:#222;font-weight: 700;margin-bottom: 24px;}
-    .detail_sub .mypage_cont .tbl_list > .txt {font-size: 14px;color:#333;margin-bottom: 24px;}
+    .detail_sub .mypage_cont .tbl_list > .txt {font-size: 14px;color:#767676;margin-bottom: 16px;}
     .detail_sub .mypage_cont .tbl_list .list_wrap {font-size: 14px;text-align: left;display: block;border-bottom: 1px solid #e1e1e1;padding: 10px 0;}
     .detail_sub .mypage_cont .tbl_list .list_wrap dl {border-bottom: none;width:100%;display: flex;align-items: center;}
     .detail_sub .mypage_cont .tbl_list .list_wrap.inquiry dl:nth-child(1) {width:100%;}
@@ -1507,20 +1508,21 @@ aside {text-align: center;width:1024px;margin:80px auto 0;}
     .detail_sub .mypage_cont .tbl_list .list_wrap.inquiry dl:nth-child(4) {width:100%;}
     .detail_sub .mypage_cont .tbl_list .list_wrap.inquiry dl:nth-child(5) {width:100%;}
 
-    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(1) {width:22%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(2) {width:22%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(3) {width:22%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(4) {width:22%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(5) {width:17%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(1) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(2) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(3) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(4) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.cancel dl:nth-child(5) {width:100%;}
 
-    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(1) {width:22%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(2) {width:22%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(3) {width:22%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(4) {width:22%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(5) {width:17%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(6) {width:17%;}
-    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dd {height:48px;padding:8px 0;}
-
+    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(1) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(2) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(3) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(4) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(5) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dl:nth-child(6) {width:100%;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dt {width:145px;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap.ticket dd {height:26px;padding:6px 0;}
+    
     .detail_sub .mypage_cont .tbl_list .list_wrap.use dl:nth-child(1) {width:15%;}
     .detail_sub .mypage_cont .tbl_list .list_wrap.use dl:nth-child(2) {width:35%;}
     .detail_sub .mypage_cont .tbl_list .list_wrap.use dl:nth-child(3) {width:35%;}
@@ -1532,7 +1534,29 @@ aside {text-align: center;width:1024px;margin:80px auto 0;}
     .detail_sub .mypage_cont .tbl_list .list_wrap dd button {border: 1px solid #e1e1e1;height:32px;width:48px;}
     .detail_sub .mypage_cont .tbl_list .list_wrap .nodata {text-align: center;color:#333;border-bottom: 1px solid #e1e1e1;padding:12px 0;width:100%;}
     .detail_sub .mypage_cont .tbl_list .list_wrap:first-of-type dt {display: block;}
-    .detail_sub .mypage_cont .desc_list {background-color: #f4f4f4;margin-top: 40px; padding:24px;font-size:14px;line-height: 22px;color:#767676;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap .delete_dl {margin-top: 10px;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap .delete_dl dt {display: none;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap .delete_dl dd {width:100%;height:46px;}
+    .detail_sub .mypage_cont .tbl_list .list_wrap .delete_dl dd button {width:100%;}
+    .detail_sub .mypage_cont .desc_list {background-color: #f4f4f4;margin: 20px 16px; padding:16px;font-size:14px;line-height: 22px;color:#767676;}
     .detail_sub .mypage_cont .desc_list h3 {font-size: 14px;color:#222;font-weight: 700;margin-bottom: 8px;}
+
+    .detail_sub .mypage_cont > h2 {display: none;}
+    .detail_sub .mypage_cont > .stit {font-size: 14px;color:#767676;margin-top:8px;text-align: center;}
+    .detail_sub .mypage_cont > .tab_list {display: flex;justify-content: center;margin-top: 0;width:100%;padding:16px;flex-wrap: wrap;}
+    .detail_sub .mypage_cont > .tab_list li {width:50%;display:flex;border: 1px solid #e1e1e1;font-size: 14px;color:#333;}
+    .detail_sub .mypage_cont > .tab_list li.on {background-color: #f16a1a;border: 1px solid #f16a1a;color:#fff;}
+    .detail_sub .mypage_cont > .tab_list li a {display:flex;width:100%;height:48px;justify-content: center;align-items: center;}
+    .detail_sub .mypage_cont .search_list {display: flex;align-items: center;margin: 8px 16px 16px;}
+    .detail_sub .mypage_cont .search_list select {height:40px;font-size: 14px;margin-right: 8px;}
+    .detail_sub .mypage_cont .search_list button {border: 1px solid #f16a1a;border-radius: 2px;width:56px;height:40px;color:#f16a1a;font-size: 14px;}
+
+    .detail_sub .mypage_cont .ticket_number_box {margin-top: 0;padding:16px;border-bottom: 8px solid #f4f4f4;}
+    .detail_sub .mypage_cont .ticket_number_box .txt {font-size: 14px;color:#767676;line-height: 22px;}
+    .detail_sub .mypage_cont .ticket_number_input {display: block;margin:24px 0 0;align-items: center;font-size: 14px;color:#333;}
+    .detail_sub .mypage_cont .ticket_number_input div {display: flex;margin:16px 0 0 0;justify-content: space-between;}
+    .detail_sub .mypage_cont .ticket_number_input input {border: 1px solid #e8e8e8;background-color: #fafafa;width:80px;height:40px;display: flex;align-items: center;padding:0 20px;margin:0;}
+    .detail_sub .mypage_cont .ticket_number_input button {width:100%;height:40px;border: 1px solid #f16a1a;border-radius: 2px;color:#f16a1a;margin:16px 0 0;}
+    .detail_sub .mypage_cont .list_wrap .delete_dl {}
 
 }
